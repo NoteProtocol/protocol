@@ -16,12 +16,12 @@ const config = {
   url: 'https://noteprotoco.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/protocol/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'NoteProtocol', // Usually your GitHub org/user name.
-  projectName: 'NoteProtocol', // Usually your repo name.
+  projectName: 'protocol', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -64,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: 'Note Protocol',
         logo: {
@@ -110,8 +110,8 @@ const config = {
               //   href: 'https://discordapp.com/invite/docusaurus',
               // },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/NoteProtocol',
+                label: 'X / Twitter',
+                href: 'https://x.com/NoteProtocol',
               },
             ],
           },
