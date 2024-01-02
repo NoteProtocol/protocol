@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://noteprotoco.org/blog</id>
+    <id>https://noteprotoco.org/protocol/blog</id>
     <title>Note Protocol Blog</title>
     <updated>2024-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://noteprotoco.org/blog"/>
+    <link rel="alternate" href="https://noteprotoco.org/protocol/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
-    <icon>https://noteprotoco.org/img/favicon.png</icon>
+    <icon>https://noteprotoco.org/protocol/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[NoteProtocol v2.0 Draft is out]]></title>
-        <id>https://noteprotoco.org/blog/release-2.0-draft</id>
-        <link href="https://noteprotoco.org/blog/release-2.0-draft"/>
+        <id>https://noteprotoco.org/protocol/blog/release-2.0-draft</id>
+        <link href="https://noteprotoco.org/protocol/blog/release-2.0-draft"/>
         <updated>2024-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[🚀 Exciting update from our team: We’ve crafted a #Bitcoin #layer-2 protocol, tailored for #UTXO-based blockchains. This protocol not only allows for the creation of tokens and NFTs but also integrates optional data #encryption, #SmartContracts, and #DID definitions, all under the MIT License.]]></summary>
         <content type="html"><![CDATA[<p>🚀 Exciting update from our team: We’ve crafted a #Bitcoin #layer-2 protocol, tailored for #UTXO-based blockchains. This protocol not only allows for the creation of tokens and NFTs but also integrates optional data #encryption, #SmartContracts, and #DID definitions, all under the MIT License.</p>
