@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Note Protocol Blog</title>
-        <link>https://noteprotoco.org/blog</link>
+        <link>https://noteprotocol.org/blog</link>
         <description>Note Protocol Blog</description>
         <lastBuildDate>Mon, 01 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[NoteProtocol v2.0 Draft is out]]></title>
-            <link>https://noteprotoco.org/blog/release-2.0-draft</link>
-            <guid>https://noteprotoco.org/blog/release-2.0-draft</guid>
+            <link>https://noteprotocol.org/blog/release-2.0-draft</link>
+            <guid>https://noteprotocol.org/blog/release-2.0-draft</guid>
             <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[🚀 Exciting update from our team: We’ve crafted a #Bitcoin #layer-2 protocol, tailored for #UTXO-based blockchains. This protocol not only allows for the creation of tokens and NFTs but also integrates optional data #encryption, #SmartContracts, and #DID definitions, all under the MIT License.]]></description>
             <content:encoded><![CDATA[<p>🚀 Exciting update from our team: We’ve crafted a #Bitcoin #layer-2 protocol, tailored for #UTXO-based blockchains. This protocol not only allows for the creation of tokens and NFTs but also integrates optional data #encryption, #SmartContracts, and #DID definitions, all under the MIT License.</p>
