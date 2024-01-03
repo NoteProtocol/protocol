@@ -1,4 +1,4 @@
-# Welcome
+# Introduction
 
 The NOTE protocol enables blockchain systems based on the Bitcoin UTXO model to create and manage digital assets. This protocol supports secure encrypted data storage and communication, and is also applicable to public and transparent data storage, including the management of ownership rights for digital assets such as Tokens and NFTs.
 
@@ -14,9 +14,9 @@ Utilizing on-chain smart contracts for Bitcoin consensus-level asset verificatio
 
 This is a second-layer solution built upon the unshakeable Bitcoin protocol and its underlying blockchain consensus rules. The protocol also lays the foundational application requirements for Layer 2 networks.
 
-[Protocol English version](./Protocol/NOTE-Protocol-V2-English)
+[Protocol English version](/docs/Protocol/NOTE-Protocol-V2-English)
 
-[Protocol Chinese version](./Protocol/NOTE-Protocol-V2-Chinese)
+[Protocol Chinese version](/docs/Protocol/NOTE-Protocol-V2-Chinese)
 
 If there are any language errors or logic problems, please let us know.
 
@@ -37,9 +37,9 @@ NOTE协议使基于比特币UTXO模型的区块链能够创建及管理数字资
 此为一种第二层解决方案，基于牢不可破的比特币协议及其底层区块链共识规则。本协议也为Layer 2网络奠定应用基础需求。
 
 
-[中文版协议](./Protocol/NOTE-Protocol-V2-Chinese)
+[中文版协议](/docs/Protocol/NOTE-Protocol-V2-Chinese)
 
-[英文版协议](./Protocol/NOTE-Protocol-V2-English)
+[英文版协议](/docs/Protocol/NOTE-Protocol-V2-English)
 
 如果有任何语言错误或者逻辑问题，请告知
 

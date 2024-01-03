@@ -36,7 +36,7 @@ function HeroBanner() {
       <div className={styles.heroInner}>
         <Heading as="h1" className={styles.heroProjectTagline}>
           <img
-            alt={translate({message: 'Docusaurus with Keytar'})}
+            alt={translate({message: 'Note Protocol'})}
             className={styles.heroLogo}
             src={useBaseUrl('/img/logo.svg')}
             width="200"
@@ -85,7 +85,7 @@ function TopBanner() {
         {'🎉\xa0'}
         <Link to="/blog/release-2.0-draft" className={styles.topBannerTitleText}>
           <Translate id="homepage.banner.launch.2.0">
-            {'Happy New year, NoteProtocol\xa02.0 Draft is\xa0out!️'}
+            {'Happy New Year! NoteProtocol\xa02.0 Draft is\xa0out!️'}
           </Translate>
         </Link>
         {'\xa0🥳'}
@@ -98,7 +98,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`${siteConfig.tagline}`}
       description="Bitcoin Layer-2 Protocol for Token/NFT/Data">
       <main>
         <TopBanner />
