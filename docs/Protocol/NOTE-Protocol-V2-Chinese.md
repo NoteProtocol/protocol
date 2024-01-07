@@ -161,8 +161,9 @@ class Scryptdemo extends SmartContract {
     @prop()
     hash: ByteString
 
-    constructor(hash: Sha256) {
+    constructor(pubKey: PubKey, hash: Sha256) {
         super(...arguments)
+        this.pubKey = pubKey
         this.hash = hash
     }
 
@@ -174,7 +175,7 @@ class Scryptdemo extends SmartContract {
         plainHash: ByteString,
         data: ByteString,
         hashSig: ByteString,
-        extra: bigint
+        extra: ByteString
     ) {
         Scryptdemo.note
         // owner
@@ -190,11 +191,11 @@ class Scryptdemo extends SmartContract {
 
 编译后的脚本为
 ```
-044e4f54450000<hash>6175615279755879a85179876959795279ac77777777777777777777
+044e4f54450000<pubKey><hash>615179547a75537a537a537a0079537a75527a527a7575615279755879a85179876959795279ac77777777777777777777
 ```
 ASM:
 ```typescript
-4e4f5445 <hash> 0 0 OP_NOP OP_DROP OP_NOP OP_2 OP_PICK OP_DROP OP_8 OP_PICK OP_SHA256 OP_1 OP_PICK OP_EQUAL OP_VERIFY OP_9 OP_PICK OP_2 OP_PICK OP_CHECKSIG OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP
+4e4f5445 0 0 <pubKey> <hash> OP_NOP OP_1 OP_PICK OP_4 OP_ROLL OP_DROP OP_3 OP_ROLL OP_3 OP_ROLL OP_3 OP_ROLL 0 OP_PICK OP_3 OP_ROLL OP_DROP OP_2 OP_ROLL OP_2 OP_ROLL OP_DROP OP_DROP OP_NOP OP_2 OP_PICK OP_DROP OP_8 OP_PICK OP_SHA256 OP_1 OP_PICK OP_EQUAL OP_VERIFY OP_9 OP_PICK OP_2 OP_PICK OP_CHECKSIG OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP OP_NIP
 ```
 
 > 示例合约使用[Scrypt](https://Scrypt.io)制作。

@@ -84,9 +84,7 @@ function TopBanner() {
       <div className={styles.topBannerTitle}>
         {'🎉\xa0'}
         <Link to="/blog/release-2.0-draft" className={styles.topBannerTitleText}>
-          <Translate id="homepage.banner.launch.2.0">
-            {'Happy New Year! NoteProtocol\xa02.0 Draft is\xa0out!️'}
-          </Translate>
+            {'Note Protocol\xa02.0 Draft is\xa0out!️'}
         </Link>
         {'\xa0🥳'}
       </div>
