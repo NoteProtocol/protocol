@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknote_protocol=self.webpackChunknote_protocol||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"NoteProtocol v2.0 Draft is out","permalink":"/blog/release-2.0-draft","unlisted":false}]}')}}]);
