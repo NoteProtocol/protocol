@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Note Protocol',
-  tagline: 'Bitcoin Layer-2 protocol for Token/NFT/Data',
+  tagline: 'Bitcoin Assets protocol for Token/NFT/Data with SmartContract',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here

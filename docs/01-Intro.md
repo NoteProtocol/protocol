@@ -14,4 +14,4 @@ Grounded in the BIP32 standard, the protocol specifies how to generate decentral
 
 It employs advanced encryption for data security, using unpredictable random key pairs for each transaction and leveraging the Electrum BIE1 ECIES algorithm for robust data encryption. The protocol provides clear guidelines for data management, including creation, reading, updating, deleting, and sharing, promoting data integrity and privacy without the need for third-party trust. Access is exclusively granted to individuals holding the mnemonic, enhancing data and storage security.
 
-As a Layer 2 solution, the NOTE protocol builds on the solid foundation of the Bitcoin protocol and its consensus mechanism, paving the way for applications that meet the specific needs of a Layer 2 consensus network.
+As a Digital Assets solution, the NOTE protocol builds on the solid foundation of the Bitcoin protocol and its consensus mechanism, paving the way for applications that meet the specific needs of a Layer 2 consensus network.

@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.tagline}`}
-      description="Bitcoin Layer-2 Protocol for Token/NFT/Data">
+      description="Bitcoin Assets Protocol for Token/NFT/Data">
       <main>
         {<TopBanner />}
         <HeroBanner />

@@ -55,7 +55,7 @@ Moreover, the NOTE protocol is not limited to using P2TR; it can also be impleme
 
 In the NOTE protocol, addresses constructed by specific redemption scripts act as user accounts. These account addresses can only be confirmed by miners when correctly unlocked. The asset transaction data contained in the unlocking script is recognized by the indexer upon unlocking and processed by off-chain smart contracts. Only asset transactions verified by off-chain contracts are recorded by the indexer, effectively preventing Bitcoin wallets from mistakenly spending NOTE's UTXO and allowing the recovery of small amounts of Bitcoin (e.g., 546 Satoshi) in UTXOs.
 
-The design of the NOTE protocol considers multiple upgrades to privacy and transaction space optimization in the Bitcoin network since 2017. At the same time, it draws on the large block strategy represented by BSV (Bitcoin SV), delving into the potential of Bitcoin scripting. The smart contract solution of the NOTE protocol is based on the Bitcoin smart contract language developed by the sCrypt team, which supports off-chain contract verification. Since the Bitcoin script language is Turing complete and ensures execution within a given script length, indexers are not trapped in infinite loops due to poorly designed smart contracts, ensuring system stability and efficiency.
+The design of the NOTE protocol considers multiple upgrades to privacy and transaction space optimization in the Bitcoin network since 2017. At the same time, it draws on the large block strategy represented by BSV (Bitcoin SV), delving into the potential of Bitcoin scripting. The smart contract solution of the NOTE protocol is based on the Bitcoin smart contract language developed by the [sCrypt](https://scrypt.io) team, which supports off-chain contract verification. Since the Bitcoin script language is Turing complete and ensures execution within a given script length, indexers are not trapped in infinite loops due to poorly designed smart contracts, ensuring system stability and efficiency.
 
 A demo smart contract project has been released on GitHub.
 
@@ -103,3 +103,5 @@ Website: https://noteprotocol.org
 X: https://twitter.com/NoteProtocol
 
 GitHub: https://github.com/NoteProtocol
+
+Smart Contract Language: https://docs.scrypt.io/
