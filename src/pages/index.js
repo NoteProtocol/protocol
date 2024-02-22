@@ -57,7 +57,7 @@ function HeroBanner() {
           />
         </Heading>
         <div className={styles.indexCtas}>
-          <Link className="button button--primary" to="/docs">
+          <Link className="button button--primary" to="/docs/Intro">
             <Translate>Read Protocol</Translate>
           </Link>
           {/* <Link className="button button--info" to="https://docusaurus.new">
