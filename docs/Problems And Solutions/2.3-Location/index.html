@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.2610640a.css">
-<script src="/assets/js/runtime~main.51590679.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fbcb3ff0.js" defer="defer"></script>
 <script src="/assets/js/main.7fa9eea0.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,20 +24,26 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="232-utilizing-p2shp2wsh">2.3.2 Utilizing P2SH/P2WSH<a href="#232-utilizing-p2shp2wsh" class="hash-link" aria-label="Direct link to 2.3.2 Utilizing P2SH/P2WSH" title="Direct link to 2.3.2 Utilizing P2SH/P2WSH">​</a></h4>
 <p>In blockchains that facilitate P2SH/P2WSH mechanisms, the format is as follows:</p>
-<p>Unlock script: <code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code>
-Redeem script: <code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>Unlock script: <code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code></li>
+<li>Redeem script: <code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>Data is stored within the segregated witness segment.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="233-employing-p2tr">2.3.3 Employing P2TR<a href="#233-employing-p2tr" class="hash-link" aria-label="Direct link to 2.3.3 Employing P2TR" title="Direct link to 2.3.3 Employing P2TR">​</a></h4>
 <p>Like P2WSH, the redeem script is used as a branch of MAST for unlocking. The unlocking script, which includes data unlocking instructions, facilitates the unlocking.</p>
 <p>In blockchains with P2TR mechanisms, the format is defined as follows:</p>
-<p>Unlock script: <code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code>
-Redeem script: <code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>Unlock script: <code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code></li>
+<li>Redeem script: <code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>The unlock script&#x27;s information is kept in the segregated witness section.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="234-full-redemption">2.3.4 Full Redemption<a href="#234-full-redemption" class="hash-link" aria-label="Direct link to 2.3.4 Full Redemption" title="Direct link to 2.3.4 Full Redemption">​</a></h4>
 <p>Data can be fully stored in the witness data area, without the requirement to be placed in the unlocking script.</p>
 <p>For example:</p>
-<p>Unlocking script: <code>Signature</code>
-Redemption script: <code>DATA0 DATA1 DATA2 DATA3 DATA4 NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>Unlocking script: <code>Signature</code></li>
+<li>Redemption script: <code>DATA0 DATA1 DATA2 DATA3 DATA4 NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>Data saved in this format will have a different address.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Problems And Solutions/2.2-DID"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Decentralized IDs</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Problems And Solutions/2.4-Contracts"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">On-Chain Contracts</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#23-storage-locations" class="table-of-contents__link toc-highlight">2.3 Storage Locations</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://x.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">X / Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Note Protocol. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>

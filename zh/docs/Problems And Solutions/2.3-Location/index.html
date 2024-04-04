@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/zh/assets/css/styles.2610640a.css">
-<script src="/zh/assets/js/runtime~main.863f2952.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.69643da5.js" defer="defer"></script>
 <script src="/zh/assets/js/main.31cb3fdf.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -24,20 +24,26 @@
 </ul>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="232-使用p2shp2wsh">2.3.2 使用P2SH/P2WSH<a href="#232-使用p2shp2wsh" class="hash-link" aria-label="2.3.2 使用P2SH/P2WSH的直接链接" title="2.3.2 使用P2SH/P2WSH的直接链接">​</a></h4>
 <p>在支持P2SH/P2WSH机制的区块链中按如下格式定义</p>
-<p>解锁脚本：<code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code>
-赎回脚本：<code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>解锁脚本：<code>Signature DATA0 DATA1 DATA2 DATA3 DATA4</code></li>
+<li>赎回脚本：<code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>数据信息被保存在隔离见证数据区中。</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="233-使用p2tr">2.3.3 使用P2TR<a href="#233-使用p2tr" class="hash-link" aria-label="2.3.3 使用P2TR的直接链接" title="2.3.3 使用P2TR的直接链接">​</a></h4>
 <p>类似P2WSH，赎回脚本作为MAST的一个解锁分支。由包含数据解锁脚本提供解锁。</p>
 <p>在支持P2TR机制的区块链中按如下格式定义</p>
-<p>解锁脚本：<code>Signature DATA0 DATA1 DATA2 DATA3 DATA4 </code>
-赎回脚本：<code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>解锁脚本：<code>Signature DATA0 DATA1 DATA2 DATA3 DATA4 </code></li>
+<li>赎回脚本：<code>NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>解锁脚本信息保存在隔离见证数据区中。</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="234-完全赎回">2.3.4 完全赎回<a href="#234-完全赎回" class="hash-link" aria-label="2.3.4 完全赎回的直接链接" title="2.3.4 完全赎回的直接链接">​</a></h4>
-<p>数  据可以完全存储在见证人数据区，而不要求一定放在解锁脚本中。</p>
+<p>数据可以完全存储在见证人数据区，而不要求一定放在解锁脚本中。</p>
 <p>例如:</p>
-<p>解锁脚本：<code>Signature</code>
-赎回脚本：<code>DATA0 DATA1 DATA2 DATA3 DATA4 NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></p>
+<ul>
+<li>解锁脚本：<code>Signature</code></li>
+<li>赎回脚本：<code>DATA0 DATA1 DATA2 DATA3 DATA4 NOTE OP_2DROP OP_2DROP OP_2DROP Pubkey OP_CHECKSIG</code></li>
+</ul>
 <p>以此种格式保存的数据将会拥有不一样的地址。</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh/docs/Problems And Solutions/2.2-DID"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">去中心化ID</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh/docs/Problems And Solutions/2.4-Contracts"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">链上合约</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#23-存储位置" class="table-of-contents__link toc-highlight">2.3 存储位置</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://x.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">X / Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Note Protocol. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
