@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknote_protocol=self.webpackChunknote_protocol||[]).push([[4943],{3325:e=>{e.exports=JSON.parse('{"label":"N20","permalink":"/zh/blog/tags/n-20","allTagsPath":"/zh/blog/tags","count":1,"unlisted":false}')}}]);
