@@ -32,8 +32,8 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     path: 'i18n',
-    locales: ['en'],
-    // locales: ['en','zh'],
+    // locales: ['en'],
+    locales: ['en','zh'],
   },
 
   presets: [
@@ -90,10 +90,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-          // {
-          //   type: 'localeDropdown',
-          //   position: 'right',
-          // },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
         ],
       },
       footer: {
