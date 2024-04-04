@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknote_protocol=self.webpackChunknote_protocol||[]).push([[1582],{4083:o=>{o.exports=JSON.parse('{"label":"NoteProtocol","permalink":"/blog/tags/note-protocol","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

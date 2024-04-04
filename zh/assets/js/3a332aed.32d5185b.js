@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknote_protocol=self.webpackChunknote_protocol||[]).push([[1809],{8611:o=>{o.exports=JSON.parse('{"permalink":"/zh/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
