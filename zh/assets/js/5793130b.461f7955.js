@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknote_protocol=self.webpackChunknote_protocol||[]).push([[6653],{6785:t=>{t.exports=JSON.parse('{"label":"Draft","permalink":"/zh/blog/tags/draft","allTagsPath":"/zh/blog/tags","count":1,"unlisted":false}')}}]);
