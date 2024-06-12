@@ -57,7 +57,7 @@ function HeroBanner() {
           />
         </Heading>
         <div className={styles.indexCtas}>
-          <Link className="button button--primary" to="/docs/Intro">
+          <Link className="button button--primary" to="/docs/protocol">
             <Translate>Read Protocol</Translate>
           </Link>
           {/* <Link className="button button--info" to="https://docusaurus.new">
@@ -99,7 +99,7 @@ export default function Home() {
       title={`${siteConfig.tagline}`}
       description="Bitcoin Assets Protocol for Token/NFT/Data">
       <main>
-        {<TopBanner />}
+        {/* {<TopBanner />} */}
         <HeroBanner />
         <HomepageFeatures />
       </main>

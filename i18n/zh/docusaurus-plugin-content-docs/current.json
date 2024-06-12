@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Problems And Solutions": {
+    "message": "问题和解决方案",
+    "description": "The label for category Problems And Solutions in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Secure Content": {
+    "message": "加密内容",
+    "description": "The label for category Secure Content in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Token": {
+    "message": "代币",
+    "description": "The label for category Token in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.NFT": {
+    "message": "NFT",
+    "description": "The label for category NFT in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Alias": {
+    "message": "别名（Alias）",
+    "description": "The label for category Alias in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Proof": {
+    "message": "资产证明",
+    "description": "The label for category Proof in sidebar docsSidebar"
+  }
+}

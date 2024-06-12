@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -33,14 +33,14 @@ const config = {
     defaultLocale: 'en',
     path: 'i18n',
     // locales: ['en'],
-    locales: ['en','zh'],
+    locales: [ 'en', 'zh' ],
   },
 
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      ( {
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -62,13 +62,13 @@ const config = {
           trackingID: 'G-T6CXC4X888',
           anonymizeIP: true,
         },
-      }),
+      } ),
     ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    ( {
       // Replace with your project's social card
       image: 'img/social-card.png',
       navbar: {
@@ -84,7 +84,19 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
+          { to: '/blog', label: 'Blog', position: 'left' }, 
+          {
+            type: 'docSidebar',
+            sidebarId: 'communitySidebar',
+            position: 'left',
+            label: 'Community',
+          },
           {
             href: 'https://github.com/NoteProtocol',
             label: 'GitHub',
@@ -104,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs',
+                to: '/docs/protocol',
               },
             ],
           },
@@ -145,7 +157,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-    }),
+    } ),
 };
 
 export default config;

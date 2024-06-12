@@ -1,6 +1,6 @@
 {
-  "position": 2.0,
   "label": "问题和方案",
+  "position": 2,
   "collapsible": true,
   "collapsed": false,
   "className": "red"
