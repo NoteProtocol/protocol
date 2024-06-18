@@ -1,10 +1,8 @@
 ---
 title: ""
 sidebar_position: 1
-sidebar_label: Introduction
+sidebar_label: NOTE Protocol
 ---
-
-# NOTE Protocol
 
 ## 1. Introduction
 
