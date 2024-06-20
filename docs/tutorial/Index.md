@@ -8,7 +8,7 @@ This tutorial will guide you through the entire process of developing smart cont
 
 ## Getting Started
 
-- [Setup Development Environment](./01_install.md)
+- [Basic Concepts](./01_basic.md)
 - [Quick Start](./02_quick-start.md)
 - [Contract Development](./03_develop.md)
 - [Contract Publishing](./04_publish.md)

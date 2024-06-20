@@ -9,8 +9,8 @@ sidebar_label: 教程
 
 ## 开始
 
-- [开发环境安装](./01_install.md)
-- [快速开始](./02_quick-start.md)
+- [基础概念](./01_basic.md)
+- [开发环境安装](./02_quick-start.md)
 - [合约开发](./03_develop.md)
 - [合约发布](./04_publish.md)
 - [资产发行](./05_deploy.md)
