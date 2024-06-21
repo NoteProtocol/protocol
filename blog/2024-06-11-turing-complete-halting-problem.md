@@ -20,7 +20,7 @@ Turing proved the Halting Problem is unsolvable. Turing-complete systems can exp
 
 Now let’s see why some claim Bitcoin's script is not Turing complete. Because it lacks loop commands in its opcode, some argue it's not Turing complete. However, assembly language also lacks loop commands, yet no one disputes its Turing completeness. Assembly language provides the necessary tools to implement loops primarily through conditional jump instructions. Bitcoin script is similar to assembly in that loops can be unrolled. For example, to sum from 1 to 100, you could keep adding: 1+2=3, 3+3=6, 6+4=10, and so on until 100. This approach has a benefit—it addresses the Halting Problem. We know that Bitcoin transactions and blocks are limited in size, from 1MB to 4MB, potentially larger. Therefore, an unrolled script will eventually hit this size limit and force the program to stop.
 
-![Image1](./scrypt-loop.png)
+![Image1](/blog/scrypt-loop.png)
 
 One might say: Bitcoin script language is Turing complete and also solves the Halting Problem.
 
