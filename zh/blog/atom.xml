@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noteprotocol.org/zh/blog</id>
     <title>Note Protocol Blog</title>
-    <updated>2024-06-11T00:00:00.000Z</updated>
+    <updated>2024-07-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noteprotocol.org/zh/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
     <icon>https://noteprotocol.org/zh/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[NOTE协议：比特币智能合约的新里程碑]]></title>
+        <id>https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts</id>
+        <link href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts"/>
+        <updated>2024-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。]]></summary>
+        <content type="html"><![CDATA[<p>比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="一note协议简介">一、NOTE协议简介<a class="hash-link" aria-label="直接链接到一、NOTE协议简介" title="直接链接到一、NOTE协议简介" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%B8%80note%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B">​</a></h2>
+<p>NOTE协议是一种基于比特币UTXO模型的数字资产发行协议，专为能影响全球60亿人的区块链产品开发而设计。NOTE协议真正构建在比特币的UTXO模型之上，采用与TypeScript兼容的智能合约语言sCrypt，编译结果为比特币原生操作码，具备图灵完备性，支持Oracle等强大功能。NOTE协议支持链上多签、MAST、闪电网络，同时提供链下带有状态继承功能的运行环境。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="二note协议的独特优势">二、NOTE协议的独特优势<a class="hash-link" aria-label="直接链接到二、NOTE协议的独特优势" title="直接链接到二、NOTE协议的独特优势" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%BA%8Cnote%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%8B%AC%E7%89%B9%E4%BC%98%E5%8A%BF">​</a></h2>
+<p>与Ordinals和Atomicals等协议不同，NOTE协议的所有操作均基于密码学，由比特币矿工确保资产所有权。NOTE的交易成本极低，无需像其他协议那样发送两笔交易。更重要的是，NOTE协议支持智能合约，其首个合约示例实现了Bitwork挖矿和随时间递减的挖矿量功能。基于比特币UTXO模型的智能合约，开启了以太坊EVM类型智能合约之外的新大门，以比特币和UTXO模型的高效并发、最大共识为基础，为所有区块链开发者提供了新选择。sCrypt团队提供了完整的开发、编译、测试环境，从学习曲线到开发环境，从公平启动到实现复杂功能的可行性，都是革命性的飞跃。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="三协议贡献团队">三、协议贡献团队<a class="hash-link" aria-label="直接链接到三、协议贡献团队" title="直接链接到三、协议贡献团队" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%B8%89%E5%8D%8F%E8%AE%AE%E8%B4%A1%E7%8C%AE%E5%9B%A2%E9%98%9F">​</a></h2>
+<p>NOTE协议是核心技术开源、无VC投资的极客协议，采用MIT授权，社区参与贡献。第一个核心贡献团队来自日本东京的区块链专业技术团队，该团队开发过以太坊EVM多链钱包Wallet3.io、比特币UTXO钱包ChainBow.io、日本持牌比特币交易所，获得日本数字大臣奖的Web3项目、2018年问世的极早期DeFi原型、区块链基础数据服务和区块链浏览器等十余个产品。另有多位大神贡献者提供了Python版本、Go版本的开源钱包，以及来自NoteMarket团队的浏览器插件钱包和交易市场。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="四技术细节解析">四、技术细节解析<a class="hash-link" aria-label="直接链接到四、技术细节解析" title="直接链接到四、技术细节解析" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E5%9B%9B%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82%E8%A7%A3%E6%9E%90">​</a></h2>
+<p>NOTE协议采取创新方法管理比特币交易和资产。传统比特币交易中，交易输入解锁旧的UTXO并生成新的UTXO。在NOTE协议中，交易输出被视为用户账号，由交易输出脚本哈希表示，隐私性强，且资产类型和数量源自交易输入。通过这种设计，NOTE简化了资产追踪管理，提升了隐私性。</p>
+<p>相比Ordinals和Atomicals利用P2TR（Taproot）赎回脚本添加不可访问区域，NOTE协议允许通过操作码直接操作解锁数据，提高了数据的可用性。此外，NOTE协议不限于使用P2TR，还可通过P2SH、P2WSH等实现，增加了协议的灵活性和跨链能力。</p>
+<p>其链下智能合约运行环境，基于中本聪第一版未删减的BVM开发，来自Bitcore核心代码库，已稳定运行十余年。NOTE协议提供多个运行时变量，包括资产发行数量、当前高度、区块时间、交易的输入输出、交易发起账号，前一个交易的变量可以被下一个交易继承访问，实现状态传递和校验，为基于UTXO模型的新DeFi提供了技术基础。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="五智能合约与未来展望">五、智能合约与未来展望<a class="hash-link" aria-label="直接链接到五、智能合约与未来展望" title="直接链接到五、智能合约与未来展望" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%BA%94%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E4%B8%8E%E6%9C%AA%E6%9D%A5%E5%B1%95%E6%9C%9B">​</a></h2>
+<p>NOTE协议目前提供多个N20资产发行智能合约代码，已发布在GitHub上，展示了NOTE协议在比特币网络上实现复杂逻辑的能力。开发者可以通过开发智能合约，实现如AI解决问题悬赏等真实世界应用，基于全球比特币的数亿用户基础和强大共识，开发者必将展示出自己产品的实用性和创新潜力。NOTE协议目前在制定和完善N721 NFT资产发行以及Alias DID协议。</p>
+<p>NOTE协议在设计之初即高瞻远瞩，为高性能的区块链产品而设计，提供了资产无桥跨链转移的设计，将来将无限放大可能性。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="六总结">六、总结<a class="hash-link" aria-label="直接链接到六、总结" title="直接链接到六、总结" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E5%85%AD%E6%80%BB%E7%BB%93">​</a></h2>
+<p>NOTE协议代表了比特币网络向智能合约功能扩展的重要进展。其关键特点包括：</p>
+<ul>
+<li>智能合约支持：扩展比特币应用范围，支持复杂逻辑和交易类型。</li>
+<li>基于UTXO模型：借力比特币的安全性和高效率。</li>
+<li>跨链功能：支持不同UTXO链之间的资产移动。</li>
+<li>真实世界应用：应用高级密码学技术，支持复杂场景。</li>
+<li>低成本高效率：优化数据存储，减少交易成本。</li>
+<li>开源和社区驱动：强调开源精神，促进技术透明性和可信赖性。</li>
+</ul>
+<p>随着NOTE协议的发展，我们可以期待更多创新应用的出现，这些应用将在保持比特币核心价值观的同时，为用户提供更丰富的功能和更好的体验。</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="note协议">NOTE协议<a class="hash-link" aria-label="直接链接到NOTE协议" title="直接链接到NOTE协议" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#note%E5%8D%8F%E8%AE%AE">​</a></h2>
+<ul>
+<li>网站: <a href="https://noteprotocol.org/" target="_blank" rel="noopener noreferrer">https://noteprotocol.org</a></li>
+<li>X: <a href="https://twitter.com/NoteProtocol" target="_blank" rel="noopener noreferrer">https://twitter.com/NoteProtocol</a></li>
+<li>GitHub: <a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer">https://github.com/NoteProtocol</a></li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[图灵完备和停机问题]]></title>
         <id>https://noteprotocol.org/zh/blog/turing-complete-halting-problem</id>

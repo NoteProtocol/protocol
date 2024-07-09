@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noteprotocol.org/blog</id>
     <title>Note Protocol Blog</title>
-    <updated>2024-06-11T00:00:00.000Z</updated>
+    <updated>2024-07-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noteprotocol.org/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
     <icon>https://noteprotocol.org/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[NOTE Protocol: A New Milestone in Bitcoin Smart Contracts]]></title>
+        <id>https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts</id>
+        <link href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts"/>
+        <updated>2024-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Since its inception, Bitcoin has undergone countless technological innovations. The emergence of the NOTE Protocol marks a significant milestone in Bitcoin's history. After six months of meticulous protocol and ecosystem development, the NOTE Protocol is now officially available to the global audience.]]></summary>
+        <content type="html"><![CDATA[<p>Since its inception, Bitcoin has undergone countless technological innovations. The emergence of the NOTE Protocol marks a significant milestone in Bitcoin's history. After six months of meticulous protocol and ecosystem development, the NOTE Protocol is now officially available to the global audience.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="1-introduction-to-the-note-protocol">1. Introduction to the NOTE Protocol<a class="hash-link" aria-label="Direct link to 1. Introduction to the NOTE Protocol" title="Direct link to 1. Introduction to the NOTE Protocol" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#1-introduction-to-the-note-protocol">​</a></h2>
+<p>The NOTE Protocol is a digital asset issuance protocol based on the Bitcoin UTXO model, designed to develop blockchain products that can impact over 6 billion people worldwide. Unlike other protocols, the NOTE Protocol is genuinely built on Bitcoin's UTXO model. It uses the sCrypt smart contract language, compatible with TypeScript, and compiles to native Bitcoin opcodes. The protocol is Turing complete and supports powerful features such as Oracle integration. The NOTE Protocol also supports on-chain multi-signature, MAST, and the Lightning Network while providing an off-chain environment with state inheritance functionality.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="2-unique-advantages-of-the-note-protocol">2. Unique Advantages of the NOTE Protocol<a class="hash-link" aria-label="Direct link to 2. Unique Advantages of the NOTE Protocol" title="Direct link to 2. Unique Advantages of the NOTE Protocol" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#2-unique-advantages-of-the-note-protocol">​</a></h2>
+<p>Unlike protocols such as Ordinals and Atomicals, all operations in the NOTE Protocol are cryptographically based, with Bitcoin miners ensuring asset ownership. The transaction costs are incredibly low, eliminating the need for dual transactions like other protocols. More importantly, the NOTE Protocol supports smart contracts, with its first example contract implementing functionalities such as Bitwork mining and time-decaying mining rewards. This opens up new possibilities beyond Ethereum's EVM smart contracts, leveraging Bitcoin's UTXO model for efficient concurrency and maximum consensus, offering new choices for all blockchain developers. The sCrypt team provides a comprehensive development, compilation, and testing environment, making the development process revolutionary in terms of learning curve, environment setup, fair launch, and complex functionality implementation.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="3-contributing-teams">3. Contributing Teams<a class="hash-link" aria-label="Direct link to 3. Contributing Teams" title="Direct link to 3. Contributing Teams" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#3-contributing-teams">​</a></h2>
+<p>The NOTE Protocol is an open-source, VC-free geek protocol, licensed under MIT, with community contributions. The initial core contributing team hails from Tokyo, Japan, with extensive experience in blockchain technology. They have developed products like the multi-chain Ethereum EVM wallet Wallet3.io, the Bitcoin UTXO wallet ChainBow.io, a licensed Japanese Bitcoin exchange, an award-winning Web3 project by Japan's Digital Minister, an early DeFi prototype from 2018, blockchain data services, and blockchain explorers. Additionally, numerous experts have contributed Python and Go versions of open-source wallets, along with browser plugin wallets and a trading marketplace from the NoteMarket team.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="4-technical-details">4. Technical Details<a class="hash-link" aria-label="Direct link to 4. Technical Details" title="Direct link to 4. Technical Details" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#4-technical-details">​</a></h2>
+<p>The NOTE Protocol employs an innovative approach to manage Bitcoin transactions and assets. In traditional Bitcoin transactions, the input unlocks old UTXOs and generates new UTXOs. In the NOTE Protocol, the transaction output is viewed as a user account, represented by the transaction output script hash, offering strong privacy. Asset types and amounts derive from transaction inputs, simplifying asset tracking and enhancing privacy.</p>
+<p>Unlike Ordinals and Atomicals, which use P2TR (Taproot) to add inaccessible script areas, the NOTE Protocol allows direct operation on unlock data via opcodes, increasing data usability. Additionally, the NOTE Protocol can be implemented via P2SH, P2WSH, and other methods, enhancing flexibility and cross-chain capability.</p>
+<p>The off-chain smart contract environment is based on the unaltered first version of BVM from Satoshi Nakamoto, sourced from the Bitcore core codebase, and has been running stably for over a decade. The NOTE Protocol provides multiple runtime variables, including asset issuance quantities, current block height, block time, transaction inputs and outputs, and transaction initiator accounts. Previous transaction variables can be inherited and accessed by subsequent transactions, facilitating state transfer and validation, laying the technical foundation for new DeFi models based on the UTXO model.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="5-smart-contracts-and-future-prospects">5. Smart Contracts and Future Prospects<a class="hash-link" aria-label="Direct link to 5. Smart Contracts and Future Prospects" title="Direct link to 5. Smart Contracts and Future Prospects" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#5-smart-contracts-and-future-prospects">​</a></h2>
+<p>The NOTE Protocol has released multiple N20 asset issuance smart contracts on GitHub, showcasing its capability to execute complex logic on the Bitcoin network. Developers can create smart contracts for real-world applications like AI problem-solving bounties, leveraging Bitcoin's vast user base and strong consensus to demonstrate the practicality and innovation of their products. The NOTE Protocol is also developing and refining N721 NFT asset issuance and Alias DID protocols.</p>
+<p>Designed with foresight for high-performance blockchain products, the NOTE Protocol enables asset transfer across chains without bridges, greatly expanding future possibilities.</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="6-conclusion">6. Conclusion<a class="hash-link" aria-label="Direct link to 6. Conclusion" title="Direct link to 6. Conclusion" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#6-conclusion">​</a></h2>
+<p>The NOTE Protocol represents a crucial advancement in extending Bitcoin's functionality to include smart contracts. Its key features include:</p>
+<ul>
+<li><strong>Smart Contract Support</strong>: Expands Bitcoin's application range, supporting complex logic and transaction types.</li>
+<li><strong>UTXO Model</strong>: Leverages Bitcoin's security and efficiency.</li>
+<li><strong>Cross-Chain Capability</strong>: Supports asset transfers between different UTXO chains.</li>
+<li><strong>Real-World Applications</strong>: Employs advanced cryptographic techniques to support complex scenarios.</li>
+<li><strong>Low Cost and High Efficiency</strong>: Optimizes data storage to reduce transaction costs.</li>
+<li><strong>Open Source and Community-Driven</strong>: Emphasizes open-source principles, promoting transparency and trustworthiness.</li>
+</ul>
+<p>As the NOTE Protocol evolves, we can anticipate more innovative applications, enhancing user experiences while adhering to Bitcoin's core values.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="note-protocol">NOTE Protocol<a class="hash-link" aria-label="Direct link to NOTE Protocol" title="Direct link to NOTE Protocol" href="https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#note-protocol">​</a></h2>
+<ul>
+<li>Website: <a href="https://noteprotocol.org/" target="_blank" rel="noopener noreferrer">https://noteprotocol.org</a></li>
+<li>X: <a href="https://twitter.com/NoteProtocol" target="_blank" rel="noopener noreferrer">https://twitter.com/NoteProtocol</a></li>
+<li>GitHub: <a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer">https://github.com/NoteProtocol</a></li>
+</ul>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Turing completeness & Halting Problem]]></title>
         <id>https://noteprotocol.org/blog/turing-complete-halting-problem</id>
