@@ -12,8 +12,8 @@
         <id>https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts</id>
         <link href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts"/>
         <updated>2024-07-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。]]></summary>
-        <content type="html"><![CDATA[<p>比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。</p>
+        <summary type="html"><![CDATA[比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。我们的愿景与比特币一致，为全球60亿人提供点对点的数字货币。]]></summary>
+        <content type="html"><![CDATA[<p>比特币自诞生以来，经历了无数次技术革新。NOTE协议的出现标志着比特币历史上的一项重大进展。经过半年的协议设计和生态开发，NOTE协议近期正式面向全球公开。我们的愿景与比特币一致，为全球60亿人提供点对点的数字货币。</p>
 <h2 class="anchor anchorWithStickyNavbar_s992" id="一note协议简介">一、NOTE协议简介<a class="hash-link" aria-label="直接链接到一、NOTE协议简介" title="直接链接到一、NOTE协议简介" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%B8%80note%E5%8D%8F%E8%AE%AE%E7%AE%80%E4%BB%8B">​</a></h2>
 <p>NOTE协议是一种基于比特币UTXO模型的数字资产发行协议，专为能影响全球60亿人的区块链产品开发而设计。NOTE协议真正构建在比特币的UTXO模型之上，采用与TypeScript兼容的智能合约语言sCrypt，编译结果为比特币原生操作码，具备图灵完备性，支持Oracle等强大功能。NOTE协议支持链上多签、MAST、闪电网络，同时提供链下带有状态继承功能的运行环境。</p>
 <h2 class="anchor anchorWithStickyNavbar_s992" id="二note协议的独特优势">二、NOTE协议的独特优势<a class="hash-link" aria-label="直接链接到二、NOTE协议的独特优势" title="直接链接到二、NOTE协议的独特优势" href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%BA%8Cnote%E5%8D%8F%E8%AE%AE%E7%9A%84%E7%8B%AC%E7%89%B9%E4%BC%98%E5%8A%BF">​</a></h2>
