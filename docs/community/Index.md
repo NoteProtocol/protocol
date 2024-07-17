@@ -48,7 +48,7 @@ We are committed to building a robust ecosystem to support everything you need w
 
 - **[Balance Inquiry](https://note.78web3.xyz/)**: A token address balance inquiry tool. The unit of measurement is Zhang = 1000 tokens.
 - **[NoteMinter](https://github.com/GoudanWoo/note-minter)**: NoteMinter is a dedicated tool for mining NOTE tokens, written in Go. `#Go` `#OpenSource`
-- **Testnet One-Click Token Issuance**: A testnet one-click token issuance website. Many testnet tokens have been deployed using this site. `#Discontinued`
+- **[Testnet One-Click Token Issuance](https://note.btc.sv)**: A testnet one-click token issuance website. Many testnet tokens have been deployed using this site. `#Utility`
 
 ### How to Participate
 

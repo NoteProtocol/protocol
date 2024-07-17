@@ -28,7 +28,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/NoteProtocol"
   },
   "copyright": {
-    "message": "Copyright © 2024 Note Protocol.",
+    "message": "Copyright © 2024 Note Protocol. All rights reserved.",
     "description": "The footer copyright"
   }
 }

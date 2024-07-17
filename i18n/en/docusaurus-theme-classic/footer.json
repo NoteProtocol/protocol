@@ -28,7 +28,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/NoteProtocol"
   },
   "copyright": {
-    "message": "Copyright © 2024 Note Protocol. Contributed by ChainBow Co, Ltd. 2-6-6-404, Taito, Taito-Ku, Tokyo, 110-0016, Japan.",
+    "message": "Copyright © 2024 Note Protocol. All rights reserved.",
     "description": "The footer copyright"
   }
 }

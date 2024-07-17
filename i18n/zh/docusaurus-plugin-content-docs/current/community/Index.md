@@ -48,7 +48,7 @@ sidebar_label: 生态和社区
 
 - **[余额查询](https://note.78web3.xyz/)**: Token地址余额查询工具。计量单位是张=1000个。
 - **[NoteMinter](https://github.com/GoudanWoo/note-minter)**: NoteMinter 是一个用Go语言写的挖掘 NOTE 代币的专用工具。`#Go` `#开源`
-- **测试网一键发币**: 测试网一键发币网站。大量测试代币使用此网站被部署。`#已停止`
+- **[测试网一键发币](https://note.btc.sv)**: 测试网一键发币网站。大量测试代币使用此网站被部署。`#工具`
 
 ### 如何参与
 
