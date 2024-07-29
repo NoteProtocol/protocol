@@ -33,6 +33,7 @@ We are committed to building a robust ecosystem to support everything you need w
 
 - **[scryptdemo](https://github.com/NoteProtocol/scryptdemo)**: scryptdemo is the first contract code example, providing templates for development and testing. Developers can use it as a basis for their projects. `#OpenSource` `#SmartContract`
 - **[scrypt-verify](https://github.com/NoteProtocol/scrypt-verify)**: scrypt-verify is the off-chain contract verification code for the NOTE protocol. It is based on [scryptlib](https://github.com/sCrypt-Inc/scryptlib) and provides Satoshi Nakamoto's original BVM for contract verification. `#OpenSource` `#SmartContract`
+- **[N20 Connect](https://github.com/NoteScan/n20-connect)**: N20 Connect is a frontend wallet connection library for the Bitcoin ecosystem, similar to Wallet Connect. It currently supports several wallets, including UniSat, NoteMarketWallet, and ChainBow Wallet. It provides convenience for DApp development.`#Utility` `#Example` `#OpenSource`
 - **Your Code**: We look forward to more developers open-sourcing their code to help more people understand the NOTE protocol.
 
 ### Data Services
@@ -63,3 +64,6 @@ Welcome to join our community! We highly encourage you to ask questions, share y
 - **[X](https://x.com/NoteProtocol)**: We have a community on X where you can interact with other users, get help, or discuss projects. Please visit [X Community](https://x.com/NoteProtocol) for more information. You can also follow the [Chief Contributor](https://x.com/lilong) on Twitter for content in Chinese.
 - **GitHub**: We maintain a repository on GitHub where you can submit issues, report bugs, or contribute code. Please visit [GitHub Repository](https://github.com/NoteProtocol) for more information.
 - **Discord**: We have a community server on Discord where you can interact with other users, get help, or discuss projects. Please visit [Discord Server](https://discord.gg/tGBHKDPkF5) for more information.
+-- **Telegram**: We have a community group on Telegram where you can interact with other users, get help, or discuss projects. Please visit [Telegram Group](https://t.me/NoteProtocol_org) for more information.
+
+We look forward to hearing from you and supporting you in your journey with Note Protocol!

@@ -126,6 +126,10 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Telegram',
+                href: 'https://t.me/NoteProtocol_org',
+              },
+              {
                 label: 'Discord',
                 href: 'https://discord.gg/tGBHKDPkF5',
               },

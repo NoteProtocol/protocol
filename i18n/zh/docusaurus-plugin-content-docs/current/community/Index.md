@@ -33,6 +33,8 @@ sidebar_label: 生态和社区
 
 - **[scryptdemo](https://github.com/NoteProtocol/scryptdemo)**: scryptdemo 是第一个合约代码示例，提供了开发和测试的模版。开发者可以据此开发自己的项目。`#开源` `#智能合约`
 - **[scrypt-verify](https://github.com/NoteProtocol/scrypt-verify)**: scrypt-verify 是NOTE协议的链下合约校验代码。基于[scryptlib](https://github.com/sCrypt-Inc/scryptlib)制作。提供中本聪第一版的原始BVM进行合约校验。`#开源` `#智能合约`
+- **[N20 Connect](https://github.com/NoteScan/n20-connect)**
+: N20 Connect 是一个为比特币生态制作的类似Wallet Connect的前端钱包链接库。目前支持UniSat，NoteMarketWallet，以及ChainBow Wallet在内的多款钱包。为DApp开发提供了方便。`#代码库` `#开源代码`
 - **您的代码**: 期待更多的开发者开源你的代码，让更多的人了解NOTE协议。
 
 ### 数据服务
@@ -63,3 +65,4 @@ sidebar_label: 生态和社区
 - **[X](https://x.com/NoteProtocol)**: 我们在 X 上有一个社区，您可以在这里与其他用户交流、获取帮助或讨论项目。请访问 [X 社区](https://x.com/NoteProtocol) 获取更多信息。还可以关注[首席贡献者](https://x.com/lilong)的推特获取中文内容。
 - **GitHub**: 我们在 GitHub 上维护了一个仓库，您可以在这里提交问题、报告错误或贡献代码。请访问 [GitHub 仓库](https://github.com/NoteProtocol) 获取更多信息。
 - **Discord**: 我们在 Discord 上有一个社区服务器，您可以在这里与其他用户交流、获取帮助或讨论项目。请访问 [Discord 服务器](https://discord.gg/tGBHKDPkF5) 获取更多信息。
+- **Telegram 群组**: 我们在 Telegram 上有一个中文群组，您可以在这里与其他用户交流、获取帮助或讨论项目。请访问 [Telegram中文群组](https://t.me/NoteProtocol_org) 获取更多信息。
