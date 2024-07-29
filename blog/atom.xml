@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noteprotocol.org/blog</id>
     <title>Note Protocol Blog</title>
-    <updated>2024-07-09T00:00:00.000Z</updated>
+    <updated>2024-07-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noteprotocol.org/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
     <icon>https://noteprotocol.org/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[The Birth and Realization of Bitcoin Action]]></title>
+        <id>https://noteprotocol.org/blog/2024/07/29/bitcoin-action</id>
+        <link href="https://noteprotocol.org/blog/2024/07/29/bitcoin-action"/>
+        <updated>2024-07-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[During EDCON 2024, the chief contributor to the NOTE protocol, Japan's blockchain technology company ChainBow, released a new interaction protocol between Bitcoin and dApps called Bitcoin Action, and demonstrated interactions between wallets and dApps.]]></summary>
+        <content type="html"><![CDATA[<p>During EDCON 2024, the chief contributor to the NOTE protocol, Japan's blockchain technology company ChainBow, released a new interaction protocol between Bitcoin and dApps called Bitcoin Action, and demonstrated interactions between wallets and dApps.</p>
+<p><img decoding="async" loading="lazy" alt="Image1" src="https://noteprotocol.org/assets/images/action-68a68dbca59feacb45f371d1bcc9b84d.png" width="1769" height="679" class="img_O12T"></p>
+<p>From the Bitcoin BIP21 protocol in 2011 to Ethereum's <a href="https://walletconnect.com/" target="_blank" rel="noopener noreferrer">Wallet Connect</a>, and then to the <a href="https://solana.com/solutions/actions" target="_blank" rel="noopener noreferrer">Solana Action</a> protocol, wallet and dApp interaction protocols have undergone multiple technological updates, continuously improving user experience.</p>
+<p>The earliest <a href="https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki" target="_blank" rel="noopener noreferrer">BIP21</a> protocol provided a URI schema for payments, consisting of a receiving address and a transfer amount. Users made payments by scanning QR codes with their wallets, which was a one-way interaction process. Subsequently, updated versions such as <a href="https://bitcoinops.org/en/topics/bip70-payment-protocol/" target="_blank" rel="noopener noreferrer">BIP70</a>/71/72 emerged, focusing on secure interactions for merchants in Bitcoin payment scenarios.</p>
+<p>Since 2017, the rise of dApp applications has extended wallet and dApp interactions beyond payment scenarios. Decentralized applications have become more powerful, involving interactions like smart contract calls, various signature scenarios, and the emergence of decentralized identities (DID), increasing the complexity and diversity of concepts, which has confused users. Currently, specific Web3 applications are still not widely adopted.</p>
+<p>In June 2024, Solana released the new Action protocol, greatly simplifying the interaction process between wallets and dApps by removing the Connect Wallet step. It improved usability in scenarios such as payments, airdrop claims, Minting NFTs, obtaining Meme Coins, and interacting with DEXs.</p>
+<p>Now, in July 2024, the Bitcoin Action protocol has officially arrived. This new protocol has made appropriate improvements based on the Solana Action process. Unlike Solana, Bitcoin uses the Partially Signed Bitcoin Transaction (PSBT) format and supports the excellent asset issuance NOTE protocol, bringing a convenient interaction experience to Bitcoin users. Receiving and sending BTC, NOTE Tokens, claiming airdrops of the NOTE protocol, Minting NFTs, and purchasing digital assets on the DEX <a href="https://utxo.exchange/" target="_blank" rel="noopener noreferrer">UtxoExchange</a> have become very simple. The new technology allows developers to create new products and applications on Bitcoin, bringing new wealth effects to users.</p>
+<p>The complete protocol, <a href="https://chainbow.io/" target="_blank" rel="noopener noreferrer">Wallet</a>, and open-source sample code will be publicly available soon.</p>
+<p><img decoding="async" loading="lazy" alt="Image2" src="https://noteprotocol.org/assets/images/action-sample-1eee194a85de3f89c6b8f65dce19ccf2.png" width="1058" height="693" class="img_O12T"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NOTE Protocol: A New Milestone in Bitcoin Smart Contracts]]></title>
         <id>https://noteprotocol.org/blog/2024/07/9/note-protocol-bitcoin-smart-contracts</id>

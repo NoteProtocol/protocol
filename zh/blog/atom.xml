@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noteprotocol.org/zh/blog</id>
     <title>Note Protocol Blog</title>
-    <updated>2024-07-09T00:00:00.000Z</updated>
+    <updated>2024-07-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noteprotocol.org/zh/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
     <icon>https://noteprotocol.org/zh/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Bitcoin Action的诞生和实现]]></title>
+        <id>https://noteprotocol.org/zh/blog/2024/07/29/bitcoin-action</id>
+        <link href="https://noteprotocol.org/zh/blog/2024/07/29/bitcoin-action"/>
+        <updated>2024-07-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[NOTE协议的首席贡献者、日本区块链技术公司ChainBow在EDCON 2024期间发布了新的比特币与dApp交互协议 Bitcoin Action，并演示了钱包和dApp之间的交互。]]></summary>
+        <content type="html"><![CDATA[<p>NOTE协议的首席贡献者、日本区块链技术公司ChainBow在EDCON 2024期间发布了新的比特币与dApp交互协议 Bitcoin Action，并演示了钱包和dApp之间的交互。</p>
+<p><img decoding="async" loading="lazy" alt="Image1" src="https://noteprotocol.org/zh/assets/images/action-68a68dbca59feacb45f371d1bcc9b84d.png" width="1769" height="679" class="img_O12T"></p>
+<p>自2011年的比特币BIP21协议起，到以太坊的<a href="https://walletconnect.com/" target="_blank" rel="noopener noreferrer">Wallet Connect</a>，再到 <a href="https://solana.com/solutions/actions" target="_blank" rel="noopener noreferrer">Solana Action</a>协议，钱包和dApp的交互协议经历了多次技术更新，用户体验不断提升。</p>
+<p>最早的<a href="https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki" target="_blank" rel="noopener noreferrer">BIP21</a>协议提供了一个支付用的URI schema，由接收地址和转账金额组成。用户通过钱包扫描二维码进行支付，这是一个单向的交互过程。随后，<a href="https://bitcoinops.org/en/topics/bip70-payment-protocol/" target="_blank" rel="noopener noreferrer">BIP70</a>/71/72等更新的版本出现，其主要针对比特币在支付场景中商家的安全交互。</p>
+<p>2017年之后，dApp 应用的兴起使钱包和dApp的交互不仅限于支付场景。去中心化应用功能更强大，交互涉及智能合约调用、各种场景的签名以及 DID（去中心化身份）的兴起，增加了交互的复杂性和概念的多样性，这让用户感到困惑。目前，具体的 Web3 应用仍未被广泛采用。</p>
+<p>2024年6月，Solana发布了新的Action协议，大幅简化了钱包和dApp的交互流程，去掉了 Connect Wallet 这一步骤。在支付、领取空投、Mint NFT、获取 Meme Coin以及与 DEX 交互等场景中，提高了易用性。</p>
+<p>如今到了2024年7月，Bitcoin Action协议也正式到来。这个新协议在遵循Solana Action流程的基础上进行了适当改进。比特币与Solana不同，使用部分签名交易（PSBT）格式，支持优秀的资产发行NOTE协议，从而在比特币上也可以为用户带来便捷的交互体验。收发BTC、NOTE Token、领取NOTE协议的空投、Mint NFT以及在DEX
+<a href="https://utxo.exchange/" target="_blank" rel="noopener noreferrer">UtxoExchange</a> 上购买数字资产变得非常简洁。新技术为开发者在比特币上创造新的产品和应用，为用户带来新的财富效应。</p>
+<p>完整的协议、钱包<a href="https://chainbow.io/" target="_blank" rel="noopener noreferrer">ChainBow</a>以及开源示例代码将于近日公开。</p>
+<p><img decoding="async" loading="lazy" alt="Image2" src="https://noteprotocol.org/zh/assets/images/action-sample-1eee194a85de3f89c6b8f65dce19ccf2.png" width="1058" height="693" class="img_O12T"></p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[NOTE协议：比特币智能合约的新里程碑]]></title>
         <id>https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts</id>
