@@ -9,7 +9,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Note Protocol',
-  tagline: 'Bitcoin Assets protocol for Token/NFT/Data with SmartContract',
+  tagline: 'Bitcoin Assets protocol with SmartContract',
   favicon: 'img/favicon.png',
 
   // Set the production url of your site here
@@ -160,6 +160,23 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     } ),
+
+    plugins: [
+      [
+        '@docusaurus/plugin-client-redirects',
+        {
+          createRedirects(existingPath) {
+            if (existingPath.includes('/docs/Protocol/NOTE-Protocol-V2-English')) {
+              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+              return [
+                existingPath.replace('/docs/Protocol/NOTE-Protocol-V2-English', '/blog/2024/07/9/note-protocol-bitcoin-smart-contracts'),
+              ];
+            }
+            return undefined; // Return a falsy value: no redirect created
+          },
+        },
+      ],
+    ],
 };
 
 export default config;
