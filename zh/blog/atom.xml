@@ -2,11 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://noteprotocol.org/zh/blog</id>
     <title>Note Protocol Blog</title>
-    <updated>2024-07-29T00:00:00.000Z</updated>
+    <updated>2024-08-21T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://noteprotocol.org/zh/blog"/>
     <subtitle>Note Protocol Blog</subtitle>
     <icon>https://noteprotocol.org/zh/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[NOTE协议愿景实现之路]]></title>
+        <id>https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization</id>
+        <link href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization"/>
+        <updated>2024-08-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[注: 本文还在编写中，敬请期待]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p><strong>注:</strong> 本文还在编写中，敬请期待</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="引言">引言<a class="hash-link" aria-label="直接链接到引言" title="直接链接到引言" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E5%BC%95%E8%A8%80">​</a></h2>
+<p>自2008年比特币问世以来，凭借其“点对点电子现金系统”的白皮书理念，它成为了全球首个去中心化数字货币，彻底改变了金融领域的格局。比特币凭借着不可动摇的安全性和全球共识，迅速成为了加密货币的核心。成千上万的矿工通过竞争性挖矿，保障着比特币网络的安全，而比特币也逐渐成为全球各大交易所的重要资产，吸引了大量用户。比特币的全球影响力和稳固的共识基础不仅奠定了它作为价值储存手段的地位，还让它具备了成为全球性货币的潜力。</p>
+<p>然而，尽管比特币已经拥有强大的技术和用户基础，距离真正实现白皮书中的愿景仍然有一段路要走。基于这种背景，NOTE协议应运而生，其目标是利用比特币强大的共识基础，推动数字货币在全球范围内的普及，让更多普通用户能够轻松使用比特币及其他数字货币。为了实现这一愿景，NOTE协议直面技术限制、生态系统竞争、用户需求以及价格波动等多重挑战，力图在比特币网络的稳定性和安全性基础上，推动其广泛应用。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="现实挑战与发展前景">现实挑战与发展前景<a class="hash-link" aria-label="直接链接到现实挑战与发展前景" title="直接链接到现实挑战与发展前景" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E7%8E%B0%E5%AE%9E%E6%8C%91%E6%88%98%E4%B8%8E%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF">​</a></h2>
+<p>在推进比特币及NOTE协议的全球愿景时，我们需要清醒地认识到技术基础和现实的局限。比特币之所以能成功，正是因为它坚持了保守的设计原则。这些原则确保了比特币的安全性和稳定性。比如，UTXO模型保证了交易的透明和不可篡改，而10分钟的区块生成时间虽然限制了交易吞吐量，却增强了系统的稳健性。正是这种保守的设计，使得后续开发者能够放心创新，而不必担心不可预测的节点升级会引发大规模的重构。此外，尽管Taproot升级改善了比特币的部分编程能力，但在链上脚本功能和区块打包的TPS（每秒交易数）上仍有优化的空间。</p>
+<p>比特币网络的演变也受到矿工、用户和开发者之间复杂博弈的影响。矿工们通过竞争性挖矿确保了网络的安全性，但他们追求高交易费的动机往往与用户希望降低交易成本的需求相冲突。开发者则需要在提升用户体验和维持网络安全性之间找到平衡，从而进一步加剧了生态系统的复杂性。</p>
+<p>此外，经济因素同样关键。比特币价格波动直接影响着网络安全性和用户普及程度。随着价格上涨，更多矿工加入网络，进一步增强了安全性；然而，价格过高也可能导致普通用户因成本增加而放弃使用，削弱比特币作为日常支付工具的角色。NOTE协议在设计时充分考虑了这些经济因素，力求在提升网络安全性的同时，降低交易成本，推动更广泛的应用。</p>
+<p>面对这些挑战，我们不仅需要认清比特币技术的局限性，还需在矿工、用户和开发者之间找到平衡，并处理复杂的经济趋势，以实现NOTE协议的全球愿景。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="比特币历次分叉与侧链的启示">比特币历次分叉与侧链的启示<a class="hash-link" aria-label="直接链接到比特币历次分叉与侧链的启示" title="直接链接到比特币历次分叉与侧链的启示" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E6%AF%94%E7%89%B9%EF%BF%BD%E5%B8%81%E5%8E%86%E6%AC%A1%E5%88%86%E5%8F%89%E4%B8%8E%E4%BE%A7%E9%93%BE%E7%9A%84%E5%90%AF%E7%A4%BA">​</a></h2>
+<p>比特币的演变过程中，经历了多次分叉和不同资产协议的探索，这些事件不仅展示了比特币的强大共识基础，也为我们提供了宝贵的经验。分叉如BCH（Bitcoin Cash）和BSV（Bitcoin Satoshi Vision）分别尝试通过扩大区块容量来提高TPS，然而尽管在技术上有所进展，这些分叉未能维持比特币原有的共识，导致用户和矿工的分散，链上活跃度大幅下降。</p>
+<p>从这些分叉和侧链的经验中，我们认识到，简单提高TPS并不能保证生态系统的繁荣，反而因失去共识可能导致失败。真正的挑战在于如何在保证网络安全性和稳定性的前提下，实现更高的交易处理能力和功能扩展。NOTE协议正是基于这一思路，通过创新手段在比特币的Layer1上引入更多应用场景，如Token和NFT的发行，以及复杂的智能合约功能，从而推动全球化的广泛使用。</p>
+<p>这些经验告诉我们，推动比特币及其相关协议的未来发展，不仅需要技术的改进，还需要全面考虑共识的维持、用户的需求和生态系统的协调性。这种全局观念正是NOTE协议设计过程中始终遵循的核心原则——在比特币强大且稳定的Layer1基础上，构建灵活而高效的全球化协议。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="比特币layer1的未被充分利用的潜力">比特币Layer1的未被充分利用的潜力<a class="hash-link" aria-label="直接链接到比特币Layer1的未被充分利用的潜力" title="直接链接到比特币Layer1的未被充分利用的潜力" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E6%AF%94%E7%89%B9%E5%B8%81layer1%E7%9A%84%E6%9C%AA%E8%A2%AB%E5%85%85%E5%88%86%E5%88%A9%E7%94%A8%E7%9A%84%E6%BD%9C%E5%8A%9B">​</a></h2>
+<p>实际上，比特币的Layer1仍有巨大潜力尚未被充分发掘。UTXO模型保证了交易透明和不可篡改，10分钟的区块生成时间也增强了网络的稳健性。尽管比特币的TPS被认为有限，但这一计算方式存在误解。比特币的TPS应从交易被节点接受时开始计算，而非以打包入区块为准。瞬时TPS依赖于网络环境和服务器性能，目前可达3000笔交易。通过将区块升级至4M，一个区块可打包6000到7000笔交易，日交易量可达到60万到80万笔。尽管如此，Layer1的潜力还未完全释放，通过进一步优化内存池大小和管理，网络效率将得到显著提升，交易量有望达到每日100万笔。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="编程能力的扩展">编程能力的扩展<a class="hash-link" aria-label="直接链接到编程能力的扩展" title="直接链接到编程能力的扩展" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E7%BC%96%E7%A8%8B%E8%83%BD%E5%8A%9B%E7%9A%84%E6%89%A9%E5%B1%95">​</a></h2>
+<p>比特币脚本语言的简洁和可预测性是其安全设计的核心，但这也限制了其智能合约和复杂业务逻辑的支持能力。为了弥补比特币在链上编程能力的不足，NOTE协议引入了链下合约的概念。链下合约允许复杂的逻辑在链下执行，链上仅存储和验证最终状态，从而充分利用比特币网络的安全性和稳定性。</p>
+<p>通过链下合约，NOTE协议能够实现Token发行、NFT创建以及复杂的智能合约规则，这些功能超出了比特币原生脚本语言的局限。同时，链下合约大大提高了效率，使得NOTE协议能够处理更多复杂的业务流程，并且不影响网络安全性。</p>
+<p>链下合约不仅提升了比特币网络的编程能力，还扩展了其应用场景。例如，供应链管理、去中心化金融（DeFi）和跨境支付等，都可以通过链下合约高效地在NOTE协议中实现。此外，链下合约还减轻了主链的负担，提高了系统的整体处理速度和效率。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="经济因素的考虑">经济因素的考虑<a class="hash-link" aria-label="直接链接到经济因素的考虑" title="直接链接到经济因素的�考虑" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E7%BB%8F%E6%B5%8E%E5%9B%A0%E7%B4%A0%E7%9A%84%E8%80%83%E8%99%91">​</a></h2>
+<p>比特币价格的持续升值不仅加强了网络安全性，还提升了矿工的积极性。但这也带来了高昂的交易成本，影响了其作为日常支付工具的普及。NOTE协议通过设计一种更加合理的经济模型，试图平衡用户体验和系统的可持续性。</p>
+<ul>
+<li><strong>低交易费用</strong>：NOTE协议优化了区块空间的利用率，将每笔交易的矿工费用控制在1到2美元之间，避免过多信息占用空间，从而降低了用户的成本负担。</li>
+<li><strong>原生跨链支持</strong>：NOTE协议支持UTXO链之间的资产转移，这使得资产可以在更低成本的链上转移，并在需要时返回比特币链上，全过程基于比特币的UTXO原理，无需依赖桥接。</li>
+<li><strong>合理的经济设计</strong>：通过控制交易费用并优化协议激励机制，NOTE协议确保了网络的安全性和可持续性，同时保持用户进入系统的低门槛。</li>
+</ul>
+<p>NOTE协议的经济模型帮助缓解了比特币高价带来的负面影响，提供了一个更友好的用户体验，并为矿工和其他参与者创造了一个可持续发展的生态系统。</p>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="愿景的实现之路">愿景的实现之路<a class="hash-link" aria-label="直接链接到愿景的实现之路" title="直接链接到愿景的实现之路" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E6%84%BF%E6%99%AF%E7%9A%84%E5%AE%9E%E7%8E%B0%E4%B9%8B%E8%B7%AF">​</a></h2>
+<p>NOTE协议的愿景是基于比特币的强大共识基础，推动数字货币的全球普及。要实现这一目标，不仅仅依赖技术突破，还需要合理的经济设计、扩展的编程能力和适应市场变化的持续改进。</p>
+<ol>
+<li>
+<p><strong>全面推广比特币及NOTE协议</strong>：NOTE协议通过技术优化和经济设计，推动比特币及自身的全球普及。通过内存池优化、链下合约引入等手段，NOTE协议为比特币扩展了应用场景，使其不仅仅是价值存储工具，还成为支持复杂智能合约和数字资产发行的平台。</p>
+</li>
+<li>
+<p><strong>未来的持续改进</strong>：随着区块链技术的不断演进，NOTE协议将持续优化以应对新兴市场需求和技术挑战。未来技术的进一步改进，如更高效的交易打包算法和节点优化，将继续提高比特币网络的效率，同时确保其去中心化和安全性。</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_s992" id="总结">总结<a class="hash-link" aria-label="直接链接到总结" title="直接链接到总结" href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E6%80%BB%E7%BB%93">​</a></h2>
+<p>NOTE协议继承了比特币网络的核心优势，同时通过技术创新和经济优化推动了其全球普及。通过链下合约、低成本交易和扩展编程能力，NOTE协议克服了比特币固有的限制，扩展了其应用场景，在确保安全与稳定的同时，推动比特币的持续演进。</p>
+<p>NOTE协议的愿景是通过全球化的推广和技术的持续迭代，让数字货币惠及全球用户，推动去中心化经济体系的建立。借助比特币的共识基础与自身的创新力量，NOTE协议正朝着成为全球数字货币标准的方向稳步迈进。</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Bitcoin Action的诞生和实现]]></title>
         <id>https://noteprotocol.org/zh/blog/2024/07/29/bitcoin-action</id>
