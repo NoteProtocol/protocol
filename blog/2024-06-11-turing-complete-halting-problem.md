@@ -8,6 +8,8 @@ If we say the native Bitcoin scripting language is Turing complete, many people 
 
 Turing Completeness refers to a programming language that can implement any computation a Turing machine is capable of. This concept comes from Alan Turing, who proposed the Turing Machine model. It’s an abstract machine that performs calculations by reading and writing symbols on an infinitely long tape.
 
+<!--truncate-->
+
 If a programming language is Turing complete, it means it can simulate all computational functions of a Turing machine. Typically, this requires the language to support conditional branching (like if/else statements) and loops (or recursion) to make decisions based on data and repeatedly perform certain actions until a specific condition is met.
 
 Is it reasonable that a program in an infinite loop could run indefinitely on an infinitely long tape? Is it reasonable to say that a program that can implement an infinite loop is Turing complete?

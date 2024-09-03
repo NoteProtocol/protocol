@@ -3,7 +3,7 @@
     "message": "Note Protocol"
   },
   "homepage.hero.title": {
-    "message": "Build <b>Assets</b> on <b>Bitcoin</b>, using DIDs, Smart Contracts, focus on your <b>Real World</b> applications."
+    "message": "Build Assets on <b>Bitcoin Layer 1</b>, using <b>Smart Contracts</b>, focus on your Real World applications."
   },
   "Read Protocol": {
     "message": "Read Protocol"
@@ -294,5 +294,51 @@
   "theme.unlistedContent.message": {
     "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
     "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Unlisted page",
+    "description": "The unlisted content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Draft page",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
+    "description": "The draft content banner message"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Authors",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "View all authors",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "homepage.features.encryption.title": {
+    "message": "Cryptography"
+  },
+  "homepage.features.encryption.description": {
+    "message": "Comprehensive application of elliptic curve encryption technology, encompassing not only HASH but also encryption and decryption capabilities, as well as DID actions."
+  },
+  "homepage.features.realWorld.title": {
+    "message": "Focus on Real World"
+  },
+  "homepage.features.realWorld.description": {
+    "message": "Achieving on-chain transaction consensus, and off-chain asset interpretation and proof. Whether for Tokens/NFTs or other data, significantly reducing transaction friction costs in society through smart contracts and Merkle proofs."
+  },
+  "homepage.features.bitcoin.title": {
+    "message": "Powered by Bitcoin"
+  },
+  "homepage.features.bitcoin.description": {
+    "message": "Driven by years of blockchain technology development and a vision to serve humanity globally, we continuously strive to improve and enhance. We believe in universal financial values, aiming to guide the world towards greater unity."
   }
 }

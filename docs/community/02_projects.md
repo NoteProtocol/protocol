@@ -24,4 +24,3 @@ sidebar_label: Projects and SourceCode
 - **[NoteMinter](https://github.com/GoudanWoo/note-minter)**: NoteMinter is a dedicated tool for mining NOTE tokens, written in Go. `#Go` `#OpenSource`
 - **[Testnet One-Click Token Issuance](https://note.btc.sv)**: A testnet one-click token issuance website. Many testnet tokens have been deployed using this site. `#Utility`
 - **[N20 Bulk Sender](https://bulksender.notenation.io/)**: enabling users to easily send N20 assets in bulk to multiple addresses. The N20 Bulk Sender connects user wallets via the n20-connect project, supporting ChainBow Wallet, Unisat Wallet, and NOTE Market Wallet. it is now fully open-source, and developers can access the complete code at [GitHub](https://github.com/notenationio/N20BulkSender) `#Utility` `#OpenSource`
-

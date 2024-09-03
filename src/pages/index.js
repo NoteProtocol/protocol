@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Timeline from '@site/src/components/Timeline';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
 
@@ -49,7 +50,7 @@ function HeroBanner() {
               __html: translate({
                 id: 'homepage.hero.title',
                 message:
-                  'Build <b>Assets</b> on <b>Bitcoin</b>, using DIDs, Smart Contracts, focus on your <b>Real World</b> applications.',
+                  'Build <b>Assets</b> on <b>Bitcoin Layer 1</b>, using Smart Contracts, focus on your <b>Real World</b> applications.',
                 description:
                   '',
               }),
@@ -97,11 +98,12 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.tagline}`}
-      description="Bitcoin Assets Protocol for Token/NFT/Data">
+      description="Bitcoin Layer-1 Assets Protocol for Token/NFT/Data">
       <main>
         {/* {<TopBanner />} */}
         <HeroBanner />
         <HomepageFeatures />
+        <Timeline />
       </main>
     </Layout>
   );

@@ -4,6 +4,8 @@ NOTE协议的首席贡献者、日本区块链技术公司ChainBow在EDCON 2024�
 
 ![Image1](/blog/action.png)
 
+<!--truncate-->
+
 自2011年的比特币BIP21协议起，到以太坊的[Wallet Connect](https://walletconnect.com/)，再到 [Solana Action](https://solana.com/solutions/actions)协议，钱包和dApp的交互协议经历了多次技术更新，用户体验不断提升。
 
 最早的[BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki)协议提供了一个支付用的URI schema，由接收地址和转账金额组成。用户通过钱包扫描二维码进行支付，这是一个单向的交互过程。随后，[BIP70](https://bitcoinops.org/en/topics/bip70-payment-protocol/)/71/72等更新的版本出现，其主要针对比特币在支付场景中商家的安全交互。

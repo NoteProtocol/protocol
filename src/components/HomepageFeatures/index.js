@@ -1,34 +1,23 @@
+import React from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { translate } from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Cryptography',
+    title: 'homepage.features.encryption.title',
+    description: 'homepage.features.encryption.description',
     Svg: require('@site/static/img/security.svg').default,
-    description: (
-      <>
-        Comprehensive application of elliptic curve encryption technology, encompassing not only HASH but also encryption and decryption capabilities, as well as DID actions.
-      </>
-    ),
   },
   {
-    title: 'Focus on Real World',
+    title: 'homepage.features.realWorld.title',
+    description: 'homepage.features.realWorld.description',
     Svg: require('@site/static/img/treasure.svg').default,
-    description: (
-      <>
-        Achieving on-chain transaction consensus, and off-chain asset interpretation and proof. Whether for Tokens/NFTs or other data, significantly reducing transaction friction costs in society through smart contracts and Merkle proofs.
-      </>
-    ),
   },
   {
-    title: 'Powered by Bitcoin',
+    title: 'homepage.features.bitcoin.title',
+    description: 'homepage.features.bitcoin.description',
     Svg: require('@site/static/img/investor.svg').default,
-    description: (
-      <>
-        Driven by years of blockchain technology development and a vision to serve humanity globally, we continuously strive to improve and enhance. We believe in universal financial values, aiming to guide the world towards greater unity.
-      </>
-    ),
   },
 ];
 
@@ -39,8 +28,8 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <h3>{translate({id:title, message: "title"})}</h3>
+        <p>{translate({id:description, message: "description"})}</p>
       </div>
     </div>
   );

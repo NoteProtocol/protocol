@@ -4,6 +4,8 @@ During EDCON 2024, the chief contributor to the NOTE protocol, Japan's blockchai
 
 ![Image1](/blog/action.png)
 
+<!--truncate-->
+
 From the Bitcoin BIP21 protocol in 2011 to Ethereum's [Wallet Connect](https://walletconnect.com/), and then to the [Solana Action](https://solana.com/solutions/actions) protocol, wallet and dApp interaction protocols have undergone multiple technological updates, continuously improving user experience.
 
 The earliest [BIP21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki) protocol provided a URI schema for payments, consisting of a receiving address and a transfer amount. Users made payments by scanning QR codes with their wallets, which was a one-way interaction process. Subsequently, updated versions such as [BIP70](https://bitcoinops.org/en/topics/bip70-payment-protocol/)/71/72 emerged, focusing on secure interactions for merchants in Bitcoin payment scenarios.

@@ -2,6 +2,8 @@
 
 Since its inception, Bitcoin has undergone countless technological innovations. The emergence of the NOTE Protocol marks a significant milestone in Bitcoin's history. After six months of meticulous protocol and ecosystem development, the NOTE Protocol is now officially available to the global audience. Our vision aligns with Bitcoin's: to provide a peer-to-peer digital currency for 6 billion people worldwide.
 
+<!--truncate-->
+
 ## 1. Introduction to the NOTE Protocol
 
 The NOTE Protocol is a digital asset issuance protocol based on the Bitcoin UTXO model, designed to develop blockchain products that can impact over 6 billion people worldwide. Unlike other protocols, the NOTE Protocol is genuinely built on Bitcoin's UTXO model. It uses the sCrypt smart contract language, compatible with TypeScript, and compiles to native Bitcoin opcodes. The protocol is Turing complete and supports powerful features such as Oracle integration. The NOTE Protocol also supports on-chain multi-signature, MAST, and the Lightning Network while providing an off-chain environment with state inheritance functionality.

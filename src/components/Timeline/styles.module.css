@@ -1,0 +1,172 @@
+/* Timeline.module.css */
+.timelineContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timelineTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--ifm-heading-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+[data-theme='dark'] .timelineTitle {
+  background: linear-gradient(45deg, #4da6ff, #a64dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #e0e0e0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timelineItem {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #3498db;
+  border-radius: 50%;
+  z-index: 1;
+  top: 15px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::after {
+  right: -8px;
+}
+
+.right::after {
+  left: -8px;
+}
+
+.timelineContent {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--ifm-font-color-base);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* 深色模式特定样式 */
+[data-theme='dark'] .timelineContent {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+/* 增加不同颜色卡片的对比度 */
+[data-theme='dark'] .color0 { background-color: rgba(0, 100, 200, 0.2); }
+[data-theme='dark'] .color1 { background-color: rgba(0, 200, 100, 0.2); }
+[data-theme='dark'] .color2 { background-color: rgba(200, 100, 0, 0.2); }
+[data-theme='dark'] .color3 { background-color: rgba(100, 0, 200, 0.2); }
+
+/* 调整日期和标题颜色 */
+[data-theme='dark'] .timelineDate {
+  color: #a0a0a0;
+}
+
+[data-theme='dark'] .timelineContent h3 {
+  color: #ffffff;
+}
+
+/* 调整链接颜色 */
+[data-theme='dark'] .contentLink {
+  color: #4da6ff;
+}
+
+.timelineDate {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.past {
+  color: #888;
+}
+
+.current {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.future {
+  color: #3498db;
+}
+
+.currentIcon {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+.color0 { background-color: #E1EAFF; }
+.color1 { background-color: #E6FFED; }
+.color2 { background-color: #D9F3FD; }
+.color3 { background-color: #F9F0FF; }
+
+.contentLink {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.contentLink:hover {
+  opacity: 0.7;
+}
+
+.contentLink p {
+  margin: 0;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timelineItem {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timelineItem::after {
+    left: 23px;
+  }
+  
+  .left, .right {
+    left: 0;
+  }
+}

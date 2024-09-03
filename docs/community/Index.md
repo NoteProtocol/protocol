@@ -16,7 +16,7 @@ We are committed to building a robust ecosystem to support everything you need w
 
 - [Open Source Code Examples](02_projects.md#open-source-code-examples)
 - [Projects](02_projects.md#projects)
-- [Tools](02_projects.md#other-tools)
+- [Tools](02_projects.md#tools)
 
 ### How to Participate
 

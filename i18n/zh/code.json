@@ -3,7 +3,7 @@
     "message": "NOTE协议"
   },
   "homepage.hero.title": {
-    "message": "聚焦真实世界应用（RWA），利用去中心化身份识别（DID）和智能合约在比特币上构建数字资产"
+    "message": "聚焦真实世界应用（RWA），在<b>比特币一层（Layer 1）</b>上利用<b>智能合约</b>构建数字资产"
   },
   "Read Protocol": {
     "message": "阅读协议"
@@ -42,7 +42,7 @@
     "message": "1篇帖子|{count}篇帖子"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts}篇帖子标记为“{tagName}”"
+    "message": "{nPosts}篇帖子标记为{tagName}"
   },
   "theme.tags.tagsPageLink": {
     "message": "查看所有标签"
@@ -75,7 +75,7 @@
     "message": "1篇文档被标记|{count}篇文档被标记"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}篇文档标记为“{tagName}”"
+    "message": "{nDocsTagged}篇文档标记为{tagName}"
   },
   "theme.docs.versionBadge.label": {
     "message": "版本：{versionLabel}"
@@ -153,10 +153,10 @@
     "message": "切换换行"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "展开侧边栏类别‘{label}’"
+    "message": "展开侧边栏类别'{label}'"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "折叠侧边栏类别‘{label}’"
+    "message": "折叠侧边栏类别'{label}'"
   },
   "theme.NavBar.navAriaLabel": {
     "message": "主要"
@@ -223,5 +223,164 @@
   },
   "theme.unlistedContent.message": {
     "message": "此页面未列出。搜索引擎将不会索引它，只有拥有直接链接的用户才能访问。"
+  },
+  "Cryptography": {
+    "message": "密码学"
+  },
+  "Focus on Real World": {
+    "message": "聚焦现实世界"
+  },
+  "Powered by Bitcoin": {
+    "message": "比特币驱动"
+  },
+  "Comprehensive application of elliptic curve encryption technology, encompassing not only HASH but also encryption and decryption capabilities, as well as DID actions.": {
+    "message": "全面应用椭圆曲线加密技术，不仅包括HASH，还包括加解密能力，以及DID行为。"
+  },
+  "Achieving on-chain transaction consensus, and off-chain asset interpretation and proof. Whether for Tokens/NFTs or other data, significantly reducing transaction friction costs in society through smart contracts and Merkle proofs.": {
+    "message": "实现链上交易共识，链下资产解释和证明。无论是Token/NFT还是其他数据，通过智能合约和默克尔证明，大幅降低社会交易摩擦成本。"
+  },
+  "Driven by years of blockchain technology development and a vision to serve humanity globally, we continuously strive to improve and enhance. We believe in universal financial values, aiming to guide the world towards greater unity.": {
+    "message": "在多年区块链技术积累和服务全人类愿景的驱动下，我们不断改进和提高。我们相信普世金融价值观，引导世界走向更大的统一。"
+  },
+  "timeline.title": {
+    "message": "时间线"
+  },
+  "timeline.item.0.title": {
+    "message": "协议发布"
+  },
+  "timeline.item.0.content": {
+    "message": "来自NOTE.SV原型设计"
+  },
+  "timeline.item.1.title": {
+    "message": "协议网站构建"
+  },
+  "timeline.item.1.content": {
+    "message": "公开协议详细内容"
+  },
+  "timeline.item.2.title": {
+    "message": "开源第一个智能合约"
+  },
+  "timeline.item.2.content": {
+    "message": "演示挖矿减半"
+  },
+  "timeline.item.3.title": {
+    "message": "部署第一个N20 Token"
+  },
+  "timeline.item.3.content": {
+    "message": "演示和验证智能合约有效"
+  },
+  "timeline.item.4.title": {
+    "message": "钱包APP发布"
+  },
+  "timeline.item.4.content": {
+    "message": "iOS/Android"
+  },
+  "timeline.item.5.title": {
+    "message": "协议升级v2"
+  },
+  "timeline.item.5.content": {
+    "message": "UTXO绑定/跨链"
+  },
+  "timeline.item.6.title": {
+    "message": "第一个DEX"
+  },
+  "timeline.item.6.content": {
+    "message": "社区贡献的NoteMarket"
+  },
+  "timeline.item.7.title": {
+    "message": "第二个DEX和新版钱包APP"
+  },
+  "timeline.item.7.content": {
+    "message": "ChainBow & UTXO.Exchange"
+  },
+  "timeline.item.8.title": {
+    "message": "宣布比特币Action协议"
+  },
+  "timeline.item.8.content": {
+    "message": "演示比特币的Blinks技术"
+  },
+  "timeline.item.9.title": {
+    "message": "FIGHT诞生"
+  },
+  "timeline.item.9.content": {
+    "message": "第一个meme币"
+  },
+  "timeline.item.10.title": {
+    "message": "第一场技术讲座"
+  },
+  "timeline.item.10.content": {
+    "message": "面向Builder介绍比特币知识"
+  },
+  "timeline.item.11.title": {
+    "message": "研发状态合约"
+  },
+  "timeline.item.11.content": {
+    "message": "支持meme/版税/网页挖矿等代币模版，将可一键部署"
+  },
+  "timeline.item.12.title": {
+    "message": "发布Action协议"
+  },
+  "timeline.item.12.content": {
+    "message": "支持P2P交易"
+  },
+  "timeline.item.13.title": {
+    "message": "(待定)"
+  },
+  "timeline.item.13.content": {
+    "message": "🎉🎉🎉"
+  },
+  "timeline.item.14.title": {
+    "message": "NOTE DAO和基金会"
+  },
+  "timeline.item.14.content": {
+    "message": "社区去中心化投票共建"
+  },
+  "timeline.item.15.title": {
+    "message": "设计Alias协议"
+  },
+  "timeline.item.15.content": {
+    "message": "可交易的公钥别名/邮件系统"
+  },
+  "timeline.item.16.title": {
+    "message": "设计N721 NFT协议"
+  },
+  "timeline.item.16.content": {
+    "message": "可交易的数字版权"
+  },
+  "timeline.item.17.title": {
+    "message": "发行一周年纪念NFT"
+  },
+  "timeline.item.17.content": {
+    "message": "NOTE持有者以及社区贡献者"
+  },
+  "timeline.item.18.title": {
+    "message": "开源分布式索引器"
+  },
+  "timeline.item.18.content": {
+    "message": "去中心化节点，设计节点奖励模型"
+  },
+  "timeline.item.19.title": {
+    "message": "To da moon"
+  },
+  "timeline.item.19.content": {
+    "message": "🎉🎉🎉"
+  },
+  "homepage.features.encryption.title": {
+    "message": "全面应用椭圆曲线加密技术"
+  },
+  "homepage.features.encryption.description": {
+    "message": "不仅包括HASH，还包括加解密能力，以及DID去中心化的实用ID。"
+  },
+  "homepage.features.realWorld.title": {
+    "message": "聚焦现实世界"
+  },
+  "homepage.features.realWorld.description": {
+    "message": "实现链上交易共识，链下资产解释和证明。无论是Token/NFT还是其他数据，通过智能合约和默克尔证明，大幅降低社会交易摩擦成本。大幅增加BTC一层交易数量。"
+  },
+  "homepage.features.bitcoin.title": {
+    "message": "比特币驱动"
+  },
+  "homepage.features.bitcoin.description": {
+    "message": "在多年区块链技术积累和服务全人类愿景的驱动下，我们不断改进和提高。我们相信普世金融价值观，引导世界走向更大的统一。"
   }
 }
