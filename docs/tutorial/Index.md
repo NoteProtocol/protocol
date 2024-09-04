@@ -1,10 +1,14 @@
 ---
 title: ""
-sidebar_position: 0
+sidebar_position: -1
 sidebar_label: Tutorial
 ---
 
 This tutorial will guide you through the entire process of developing smart contracts, publishing digital assets using the NOTE protocol.
+
+## User Guide
+
+- [User Guide](./00_guide.md)
 
 ## Getting Started
 

@@ -26,7 +26,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  staticDirectories: ['static'],
+  staticDirectories: [ 'static' ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -49,6 +49,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // editUrl:
           //   'https://github.com/NoteProtocol/protocol/tree/main/',
+          // 确保 MDX 支持已启用
+          remarkPlugins: [],
+          rehypePlugins: [],
         },
         blog: {
           showReadingTime: true,
@@ -92,7 +95,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' }, 
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'docSidebar',
             sidebarId: 'communitySidebar',
@@ -161,22 +164,22 @@ const config = {
       },
     } ),
 
-    plugins: [
-      [
-        '@docusaurus/plugin-client-redirects',
-        {
-          createRedirects(existingPath) {
-            if (existingPath.includes('/docs/Protocol/NOTE-Protocol-V2-English')) {
-              // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-              return [
-                existingPath.replace('/docs/Protocol/NOTE-Protocol-V2-English', '/blog/2024/07/9/note-protocol-bitcoin-smart-contracts'),
-              ];
-            }
-            return undefined; // Return a falsy value: no redirect created
-          },
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects ( existingPath ) {
+          if ( existingPath.includes( '/docs/Protocol/NOTE-Protocol-V2-English' ) ) {
+            // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+            return [
+              existingPath.replace( '/docs/Protocol/NOTE-Protocol-V2-English', '/blog/2024/07/9/note-protocol-bitcoin-smart-contracts' ),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
         },
-      ],
+      },
     ],
+  ],
 };
 
 export default config;

@@ -1,7 +1,7 @@
 ---
-title: "基本概念"
+title: "开发指南"
 sidebar_position: 1
-sidebar_label: 基本概念
+sidebar_label: 开发指南
 ---
 
 在比特币UTXO模型中，首先需要理解以下的名词。
