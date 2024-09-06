@@ -1,0 +1,33 @@
+/* src/components/Disclaimer.module.css */
+.disclaimer {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer h3 {
+  margin-top: 0;
+  color: #856404;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ffeeba;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.disclaimer ul {
+  padding-left: 1.5rem;
+}
+
+.disclaimer li {
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer p:last-child {
+  margin-bottom: 0;
+  font-weight: bold;
+}

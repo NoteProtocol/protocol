@@ -382,5 +382,28 @@
   },
   "homepage.features.bitcoin.description": {
     "message": "在多年区块链技术积累和服务全人类愿景的驱动下，我们不断改进和提高。我们相信普世金融价值观，引导世界走向更大的统一。"
+  },  "Disclaimer": {
+    "message": "免责声明"
+  },
+  "The NOTE protocol and its associated software are currently in the testing phase and are experimental technological explorations. Please be aware of the following:": {
+    "message": "NOTE协议及其相关软件目前处于测试阶段，属于实验性技术探索。请注意以下事项："
+  },
+  "All tokens have no actual value, and speculation is strongly discouraged.": {
+    "message": "所有代币均无实际价值，强烈建议不要进行任何投机行为。"
+  },
+  "There is a significant risk of losing part or all of your assets.": {
+    "message": "存在损失部分或全部资产的重大风险。"
+  },
+  "The protocol and software may contain bugs or security vulnerabilities.": {
+    "message": "协议和软件可能存在错误或安全漏洞。"
+  },
+  "Features and functionalities may change without prior notice.": {
+    "message": "功能和特性可能会在没有预先通知的情况下发生变化。"
+  },
+  "The developers are not responsible for any losses or damages incurred.": {
+    "message": "开发者不对任何损失或损害承担责任。"
+  },
+  "By using the NOTE protocol or any associated software, you acknowledge that you understand and accept these risks. Always do your own research and never invest more than you can afford to lose.": {
+    "message": "使用NOTE协议或任何相关软件，即表示您了解并接受这些风险。请务必自行研究，切勿投入超出您承受能力的资金。"
   }
 }

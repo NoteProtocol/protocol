@@ -340,5 +340,29 @@
   },
   "homepage.features.bitcoin.description": {
     "message": "Driven by years of blockchain technology development and a vision to serve humanity globally, we continuously strive to improve and enhance. We believe in universal financial values, aiming to guide the world towards greater unity."
+  },
+  "Disclaimer": {
+    "message": "Disclaimer"
+  },
+  "The NOTE protocol and its associated software are currently in the testing phase and are experimental technological explorations. Please be aware of the following:": {
+    "message": "The NOTE protocol and its associated software are currently in the testing phase and are experimental technological explorations. Please be aware of the following:"
+  },
+  "All tokens have no actual value, and speculation is strongly discouraged.": {
+    "message": "All tokens have no actual value, and speculation is strongly discouraged."
+  },
+  "There is a significant risk of losing part or all of your assets.": {
+    "message": "There is a significant risk of losing part or all of your assets."
+  },
+  "The protocol and software may contain bugs or security vulnerabilities.": {
+    "message": "The protocol and software may contain bugs or security vulnerabilities."
+  },
+  "Features and functionalities may change without prior notice.": {
+    "message": "Features and functionalities may change without prior notice."
+  },
+  "The developers are not responsible for any losses or damages incurred.": {
+    "message": "The developers are not responsible for any losses or damages incurred."
+  },
+  "By using the NOTE protocol or any associated software, you acknowledge that you understand and accept these risks. Always do your own research and never invest more than you can afford to lose.": {
+    "message": "By using the NOTE protocol or any associated software, you acknowledge that you understand and accept these risks. Always do your own research and never invest more than you can afford to lose."
   }
 }

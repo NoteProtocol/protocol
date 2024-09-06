@@ -6,6 +6,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Timeline from '@site/src/components/Timeline';
 import Translate, {translate} from '@docusaurus/Translate';
 import useBaseUrl, {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import Disclaimer from '@site/src/components/Disclaimer';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -104,6 +105,7 @@ export default function Home() {
         <HeroBanner />
         <HomepageFeatures />
         <Timeline />
+        <Disclaimer />
       </main>
     </Layout>
   );
