@@ -12,6 +12,7 @@ sidebar_label: 开源代码项目
 : N20 Connect 是一个为比特币生态制作的类似Wallet Connect的前端钱包链接库。目前支持UniSat，NoteMarketWallet，以及ChainBow Wallet在内的多款钱包。为DApp开发提供了方便。`#代码库` `#开源代码`
 - **[pyNoteMinter](https://github.com/NoteScan/pyNoteMinter)**: 基于Python钱包的挖矿工具, pyNoteMinter为挖掘POW模式NOTE代币做了大量优化.`#工具` `#开源代码` `#OpenSource`
 - **[N-Deployer](https://n-deployer-test.vercel.app/)**: 支持部署你自己的代币。通过各种钱包（ChainBow Wallet, Unisat Wallet and NOTEMarket Wallet (via n20-connect))连接到NOTE协议的BTC网络.`#工具` `#开源代码`
+- **[Go-Urchain](https://github.com/xianb/go-urchain)**: 数据服务的Go语言客户端.`#工具` `#开源代码`
 - **您的代码**: 期待更多的开发者开源你的代码，让更多的人了解NOTE协议。
 
 ### 项目

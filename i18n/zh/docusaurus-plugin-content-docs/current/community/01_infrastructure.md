@@ -10,6 +10,8 @@ sidebar_label: 基础建设
 - **[ChainBow Wallet](https://chainbow.io)**: ChainBow Wallet 是一个iOS/Android智能手机版比特币钱包App，遵照BIP44标准设计，支持多币种，支持主网和测试网，支持App内创建多钱包，每个钱包支持多地址，界面提供中日英等多语言，明暗主题。内置的DAPP浏览器非常强大，目前处于测试阶段。`#iOS` `#Android` `#DApp`
 - **[NOTE Market Wallet](https://github.com/notemarketio/notemarket-wallet)**: NOTE Market Wallet 是开源的浏览器插件版钱包，支持Chrome/Firefox浏览器。其代码Fork自UniSat浏览器插件钱包，拥有一致的产品质量和使用体验。支持BTC主网和测试网，支持创建多钱包，支持DAPP。`#Chrome` `#FireFox` `#DApp`
 - **[pyNoteWallet](https://github.com/NoteScan/pyNoteWallet)**: pyNoteWallet 是一个Python语言写的命令行钱包，兼容TypeScript版，便于Python程序员更好地理解NOTE协议和比特币的交易过程。`#Python` `#开源`
+- **[NoteBow Wallet](https://notebow.org/)**: NoteBow钱包是一个桌面版（PC/Mac）钱包。提供主网和测试网，还可以在钱包中直接挖矿。便于使用桌面电脑的用户使用。`#Windows` `#Mac`
+
 
 ### DEX去中心化交易市场
 
