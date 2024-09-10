@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.d126cbb5.css">
-<script src="/assets/js/runtime~main.b49830a9.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.ce244936.js" defer="defer"></script>
 <script src="/assets/js/main.d1b12387.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,11 +22,11 @@
 <h3 class="anchor anchorWithStickyNavbar_obL5" id="contract-runtime-variables">Contract Runtime Variables<a href="#contract-runtime-variables" class="hash-link" aria-label="Direct link to Contract Runtime Variables" title="Direct link to Contract Runtime Variables">​</a></h3>
 <p>During the runtime of the smart contract, the indexer provides constants and environmental variables as follows:</p>
 <ul>
-<li><code>account</code>: ByteString, the initiator&#x27;s ID (ScriptHash unlocking the UTXO)</li>
+<li><code>account</code>: ByteString, the account of current tx.</li>
 <li><code>inputSatoshis</code>: bigint, the satoshis of the current input (Satoshi amount unlocking the UTXO)</li>
 <li><code>height</code>: bigint, current height; when the transaction is unconfirmed, it is the latest height plus 6</li>
 <li><code>total</code>: bigint, current minted amount of token</li>
-<li><code>creator</code>: ByteString, the account of the deployed token（The ScriptHash of the output script）</li>
+<li><code>creator</code>: ByteString, the account of the deployed token</li>
 <li><code>blockHash</code>: ByteString, the hash of the current block, empty string when unconfirmed</li>
 <li><code>blockTime</code>: bigint, the timestamp of the current block, 0 when unconfirmed</li>
 <li><code>indexInBlock</code>: bigint, the index of the current transaction in the block, 0 when unconfirmed</li>

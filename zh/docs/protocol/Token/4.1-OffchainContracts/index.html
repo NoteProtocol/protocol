@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/zh/assets/css/styles.d126cbb5.css">
-<script src="/zh/assets/js/runtime~main.1736cca5.js" defer="defer"></script>
+<script src="/zh/assets/js/runtime~main.695b5364.js" defer="defer"></script>
 <script src="/zh/assets/js/main.5096a66d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -22,11 +22,11 @@
 <h3 class="anchor anchorWithStickyNavbar_obL5" id="合约运行时变量">合约运行时变量<a href="#合约运行时变量" class="hash-link" aria-label="直接链接到合约运行时变量" title="直接链接到合约运行时变量">​</a></h3>
 <p>在智能合约运行期间,索引器提供以下常量和环境变量:</p>
 <ul>
-<li><code>account</code>: ByteString, 发起人的ID(解锁UTXO的ScriptHash)</li>
+<li><code>account</code>: ByteString, 当前交易发起人的账号</li>
 <li><code>inputSatoshis</code>: bigint, 当前输入的聪数(解锁UTXO的Satoshi数量)</li>
 <li><code>height</code>: bigint, 当前高度;当交易未确认时,为最新高度加6</li>
 <li><code>total</code>: bigint, 已铸造的代币数量</li>
-<li><code>creator</code>: ByteString, 创建代币的账号（输出脚本的脚本哈希）</li>
+<li><code>creator</code>: ByteString, 代币被创建时的创建者账号</li>
 <li><code>blockHash</code>: ByteString, 当前区块的哈希,未确认时为空字符串</li>
 <li><code>blockTime</code>: bigint, 当前区块的时间戳,未确认时为0</li>
 <li><code>indexInBlock</code>: bigint, 当前交易在区块中的索引,未确认时为0</li>
