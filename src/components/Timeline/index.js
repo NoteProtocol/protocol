@@ -16,7 +16,7 @@ const timelineData = [
   { date: '2024/8/7', title: 'First Technical Lecture', content: 'Introduce Bitcoin knowledge to Builders', link:"https://chainbow.larksuite.com/docx/YE1xd7jRcowalRxIvrYuY1LgsDb" },
   { date: '2024/8/15', title: 'Develop Status Contract', content: 'more token templates for meme coins/royalties/mining' },
   { date: '2024/9', title: 'Release Action Protocol', content: 'Support P2P transactions' },
-  { date: '2024/9', title: '(To be determined)', content: '🎉🎉🎉' },
+  { date: '2024/9', title: 'Listed on Exchange!', content: '$NOTE Has Been Listed on XT Exchange!', link: 'https://xtsupport.zendesk.com/hc/en-us/articles/37904317469081-XT-Announcement-on-Launching-NOTE-NOTE-Protocol' },
   { date: '2024/9 ~ 2024/10', title: 'NOTE DAO/Foundation', content: 'Community decentralized voting and co-building' },
   { date: '2024/10', title: 'Design Alias Protocol', content: 'Tradable public key aliases/mail system ' },
   { date: '2024/11', title: 'Design N721 NFT Protocol', content: 'Tradable digital rights' },
