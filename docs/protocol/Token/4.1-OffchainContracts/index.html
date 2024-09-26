@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
 <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.d126cbb5.css">
-<script src="/assets/js/runtime~main.5850fdfb.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.202a9657.js" defer="defer"></script>
 <script src="/assets/js/main.d1b12387.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -49,6 +49,12 @@
 </ul>
 </li>
 <li><code>balance</code>: The balance of <code>tick</code> held by the current <code>account</code>
+<ul>
+<li><code>confirmed</code>: bigint, the balance of confirmed transactions</li>
+<li><code>unconfirmed</code>: bigint, the balance of unconfirmed transactions</li>
+</ul>
+</li>
+<li><code>noteBalance</code>: The balance of <code>NOTE</code> held by the current <code>account</code>
 <ul>
 <li><code>confirmed</code>: bigint, the balance of confirmed transactions</li>
 <li><code>unconfirmed</code>: bigint, the balance of unconfirmed transactions</li>
