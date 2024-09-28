@@ -35,7 +35,7 @@
 <p>比特币脚本语言的简洁和可预测性是其安全设计的核心，但这也限制了其智能合约和复杂业务逻辑的支持能力。为了弥补比特币在链上编程能力的不足，NOTE协议引入了链下合约的概念。链下合约允许复杂的逻辑在链下执行，链上仅存储和验证最终状态，从而充分利用比特币网络的安全性和稳定性。</p>
 <p>通过链下合约，NOTE协议能够实现Token发行、NFT创建以及复杂的智能合约规则，这些功能超出了比特币原生脚本语言的局限。同时，链下合约大大提高了效率，使得NOTE协议能够处理更多复杂的业务流程，并且不影响网络安全性。</p>
 <p>链下合约不仅提升了比特币网络的编程能力，还扩展了其应用场景。例如，供应链管理、去中心化金融（DeFi）和跨境支付等，都可以通过链下合约高效地在NOTE协议中实现。此外，链下合约还减轻了主链的负担，提高了系统的整体处理速度和效率。</p>
-<h2 class="anchor anchorWithStickyNavbar_obL5" id="经济因素的考虑">经济因素的考虑<a href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E7%BB%8F%E6%B5%8E%E5%9B%A0%E7%B4%A0%E7%9A%84%E8%80%83%E8%99%91" class="hash-link" aria-label="直接链接到经济因素的考虑" title="直接链接到经济因素的考虑">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_obL5" id="经济因素的考虑">经济因素的考虑<a href="https://noteprotocol.org/zh/blog/2024/08/21/note-protocol-path-to-vision-realization#%E7%BB%8F%E6%B5%8E%E5%9B%A0%E7%B4%A0%E7%9A%84%E8%80%83%E8%99%91" class="hash-link" aria-label="直�接链接到经济因素的考虑" title="直接链接到经济因素的考虑">​</a></h2>
 <p>比特币价格的持续升值不仅加强了网络安全性，还提升了矿工的积极性。但这也带来了高昂的交易成本，影响了其作为日常支付工具的普及。NOTE协议通过设计一种更加合理的经济模型，试图平衡用户体验和系统的可持续性。</p>
 <ul>
 <li><strong>低交易费用</strong>：NOTE协议优化了区块空间的利用率，将每笔交易的矿工费用控制在1到2美元之间，避免过多信息占用空间，从而降低了用户的成本负担。</li>
@@ -94,7 +94,7 @@
 <h2 class="anchor anchorWithStickyNavbar_obL5" id="五智能合约与未来展望">五、智能合约与未来展望<a href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E4%BA%94%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E4%B8%8E%E6%9C%AA%E6%9D%A5%E5%B1%95%E6%9C%9B" class="hash-link" aria-label="直接链接到五、智能合约与未来展望" title="直接链接到五、智能合约与未来展望">​</a></h2>
 <p>NOTE协议目前提供多个N20资产发行智能合约代码，已发布在GitHub上，展示了NOTE协议在比特币网络上实现复杂逻辑的能力。开发者可以通过开发智能合约，实现如AI解决问题悬赏等真实世界应用，基于全球比特币的数亿用户基础和强大共识，开发者必将展示出自己产品的实用性和创新潜力。第一个基于NOTE协议的密码管理和加密笔记管理软件已经上市 <a href="https://note.sv/" target="_blank" rel="noopener noreferrer">https://note.sv</a> 它是完全面向普通人开发的真实区块链应用。相信伴随着大量开发者的加入，会有更多的生态应用涌现出来。NOTE协议目前在制定和完善N721 NFT资产发行以及Alias DID协议。</p>
 <p>NOTE协议在设计之初即高瞻远瞩，为高性能的区块链产品而设计，提供了资产无桥跨链转移的设计，将来将无限放大可能性。</p>
-<h2 class="anchor anchorWithStickyNavbar_obL5" id="六总结">六、总结<a href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E5%85%AD%E6%80%BB%E7%BB%93" class="hash-link" aria-label="直接链接到六、总结" title="直接链接到六、总结">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_obL5" id="六总结">六、总结<a href="https://noteprotocol.org/zh/blog/2024/07/9/note-protocol-bitcoin-smart-contracts#%E5%85%AD%E6%80%BB%E7%BB%93" class="hash-link" aria-label="直接链接��到六、总结" title="直接链接到六、总结">​</a></h2>
 <p>NOTE协议代表了比特币网络向智能合约功能扩展的重要进展。其关键特点包括：</p>
 <ul>
 <li>智能合约支持：扩展比特币应用范围，支持复杂逻辑和交易类型。</li>
