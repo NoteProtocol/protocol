@@ -86,9 +86,9 @@ function TopBanner() {
       <div className={styles.topBannerTitle}>
         {'🎉\xa0'}
         <Link to="/blog/n20-draft" className={styles.topBannerTitleText}>
-            {'N20 Token Draft is\xa0out!️'}
+            {'$NOTE Has Been Listed on XT.com Exchange!'}
         </Link>
-        {'\xa0🥳'}
+        {'\xa0🎉'}
       </div>
     </div>
   );
@@ -101,7 +101,7 @@ export default function Home() {
       title={`${siteConfig.tagline}`}
       description="Bitcoin Layer-1 Assets Protocol for Token/NFT/Data">
       <main>
-        {/* {<TopBanner />} */}
+        {<TopBanner />}
         <HeroBanner />
         <HomepageFeatures />
         <Timeline />
