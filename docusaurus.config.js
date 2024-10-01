@@ -92,6 +92,12 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'actionsSidebar',
+            position: 'left',
+            label: 'Actions',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
