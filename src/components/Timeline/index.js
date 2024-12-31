@@ -20,9 +20,10 @@ const timelineData = [
   { date: '2024/9 ~ 2024/10', title: 'NOTE DAO/Foundation', content: 'Community decentralized voting and co-building' },
   { date: '2024/10', title: 'Design Alias Protocol', content: 'Tradable public key aliases/mail system ' },
   { date: '2024/11', title: 'Design N721 NFT Protocol', content: 'Tradable digital rights' },
-  { date: '2024/12', title: 'Issue First Anniversary Commemorative NFT', content: 'For NOTE holders and community contributors' },
-  { date: '2025/1 ~ 2025/3', title: 'Open Source Distributed Indexer', content: 'Decentralized nodes, design node reward model' },
-  { date: '~ ~ ~ ~', title: 'To da moon', content: '🎉🎉🎉' },
+  // { date: '2024/12', title: 'Issue First Anniversary Commemorative NFT', content: 'For NOTE holders and community contributors' },
+  // { date: '2025/1 ~ 2025/3', title: 'Open Source Distributed Indexer', content: 'Decentralized nodes, design node reward model' },
+  { date: '2025/1 ~ ', title: 'Note Chain for AI Agent', content: 'Decentralized AI Blockchain' },
+  // { date: '~ ~ ~ ~', title: 'To da moon', content: '🎉🎉🎉' },
 ];
 
 const getCurrentYearMonth = () => {

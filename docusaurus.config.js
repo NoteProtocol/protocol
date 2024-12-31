@@ -94,7 +94,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'actionsSidebar',
             position: 'left',
-            label: 'Actions',
+            label: 'Research',
           },
           {
             type: 'docSidebar',

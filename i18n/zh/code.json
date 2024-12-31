@@ -348,22 +348,10 @@
     "message": "可交易的数字版权"
   },
   "timeline.item.17.title": {
-    "message": "发行一周年纪念NFT"
+    "message": "Note Chain研究开发"
   },
   "timeline.item.17.content": {
-    "message": "NOTE持有者以及社区贡献者"
-  },
-  "timeline.item.18.title": {
-    "message": "开源分布式索引器"
-  },
-  "timeline.item.18.content": {
-    "message": "去中心化节点，设计节点奖励模型"
-  },
-  "timeline.item.19.title": {
-    "message": "To da moon"
-  },
-  "timeline.item.19.content": {
-    "message": "🎉🎉🎉"
+    "message": "去中心化AI区块链"
   },
   "homepage.features.encryption.title": {
     "message": "全面应用椭圆曲线加密技术"
