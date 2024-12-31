@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="zh" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-research/chain" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Note Chain 白皮书 (草案) | Note Protocol</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://noteprotocol.org/zh/img/social-card.png"><meta data-rh="true" name="twitter:image" content="https://noteprotocol.org/zh/img/social-card.png"><meta data-rh="true" property="og:url" content="https://noteprotocol.org/zh/docs/research/chain"><meta data-rh="true" property="og:locale" content="zh"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh"><meta data-rh="true" name="docsearch:language" content="zh"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Note Chain 白皮书 (草案) | Note Protocol"><meta data-rh="true" name="description" content="目录"><meta data-rh="true" property="og:description" content="目录"><link data-rh="true" rel="icon" href="/zh/img/favicon.png"><link data-rh="true" rel="canonical" href="https://noteprotocol.org/zh/docs/research/chain"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/docs/research/chain" hreflang="en"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/zh/docs/research/chain" hreflang="zh"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/docs/research/chain" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh/blog/rss.xml" title="Note Protocol RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh/blog/atom.xml" title="Note Protocol Atom Feed">
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/zh/assets/css/styles.ce16c13b.css">
+<script src="/zh/assets/js/runtime~main.7ac94b2f.js" defer="defer"></script>
+<script src="/zh/assets/js/main.59c87900.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳至主要内容"><a class="skipToContent_ivH7" href="#__docusaurus_skipToContent_fallback">跳至主要内容</a></div><nav aria-label="主要" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh/"><div class="navbar__logo"><img src="/zh/img/logo.png" alt="Note Protocol" class="themedComponent_J2ST themedComponent--light_YCzB"><img src="/zh/img/logo.png" alt="Note Protocol" class="themedComponent_J2ST themedComponent--dark_QXnt"></div><b class="navbar__title text--truncate">Note Protocol</b></a><a class="navbar__item navbar__link" href="/zh/docs/protocol/">协议</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/zh/docs/research/action">Research</a><a class="navbar__item navbar__link" href="/zh/docs/tutorial/">教程</a><a class="navbar__item navbar__link" href="/zh/blog">博客</a><a class="navbar__item navbar__link" href="/zh/docs/community/">社区</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_Fh05"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>中文</a><ul class="dropdown__menu"><li><a href="/docs/research/chain" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/zh/docs/research/chain" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="zh">中文</a></li></ul></div><div class="toggle_APyT colorModeToggle_zPon"><button class="clean-btn toggleButton_sXzS toggleButtonDisabled_H9vp" type="button" disabled="" title="切换暗黑和明亮模式（当前为明亮模式）" aria-label="切换暗黑和明亮模式（当前为明亮模式）" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_afKI"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_z4D8"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_rLiG"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper__iUm"><div class="docsWrapper_IMLT"><button aria-label="滚动到顶部" class="clean-btn theme-back-to-top-button backToTopButton_laB5" type="button"></button><div class="docRoot_FJ9S"><aside class="theme-doc-sidebar-container docSidebarContainer_TQaT"><div class="sidebarViewport_WvL_"><div class="sidebar_diVX"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_KTVW"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/zh/docs/research/action">Bitcoin/Note Actions (草案)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/zh/docs/research/chain">Note Chain 白皮书 (草案)</a></li></ul></nav></div></div></aside><main class="docMainContainer_LXkU"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_MzWx"><div class="docItemContainer_mvqz"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_cT2r" aria-label="面包屑"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="首页" class="breadcrumbs__link" href="/zh/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon__JPp"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Note Chain 白皮书 (草案)</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_e0OZ theme-doc-toc-mobile tocMobile_va5u"><button type="button" class="clean-btn tocCollapsibleButton_qa9_">在本页上</button></div><div class="theme-doc-markdown markdown"><header><h1>Note Chain 白皮书 (草案)</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="目录">目录<a href="#目录" class="hash-link" aria-label="直接链接到目录" title="直接链接到目录">​</a></h2>
+<ol>
+<li>背景与使命</li>
+<li>Note Chain 的解决方案</li>
+<li>技术与架构</li>
+<li>经济与治理模型</li>
+<li>稳定币 NUST 的设计与应用</li>
+<li>应用场景</li>
+<li>长远愿景</li>
+<li>路线图</li>
+<li>结论</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="1-背景与使命">1. 背景与使命<a href="#1-背景与使命" class="hash-link" aria-label="直接链接到1. 背景与使命" title="直接链接到1. 背景与使命">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="11-背景ai-代理经济的崛起">1.1 背景：AI 代理经济的崛起<a href="#11-背景ai-代理经济的崛起" class="hash-link" aria-label="直接链接到1.1 背景：AI 代理经济的崛起" title="直接链接到1.1 背景：AI 代理经济的崛起">​</a></h3>
+<p>随着人工智能（AI）的快速发展，<strong>AI Agent（代理人）</strong> 成为未来经济的重要驱动力。AI Agent 是一种能够自动执行复杂任务的智能实体，例如量化交易、数据分析、供应链优化等。它们不仅能 为人类服务，还能够相互协作，形成一种全新的自治经济生态。</p>
+<p>然而，这种 <strong>AI 代理经济</strong> 的兴起面临以下关键问题：</p>
+<ul>
+<li><strong>支付与结算效率低</strong>：现有支付系统难以支持 AI Agent 需要的高频、低摩擦的微支付</li>
+<li><strong>信任与透明性不足</strong>：传统支付和结算方式缺乏去中心化的信任机制，无法满足 Agent 的安全需求</li>
+<li><strong>经济激励设计不完善</strong>：缺乏统一的基础设施让 AI Agent 和生态参与者协作并从中受益</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="12-note-chain-的使命">1.2 Note Chain 的使命<a href="#12-note-chain-的使命" class="hash-link" aria-label="直接链接到1.2 Note Chain 的使命" title="直接链接到1.2 Note Chain 的使命">​</a></h3>
+<p><strong>Note Chain 的使命</strong> 是为 AI 代理经济提供一个 <strong>去中心化、可信、高效</strong> 的金融基础设施。</p>
+<p>我们致力于：</p>
+<ol>
+<li><strong>赋能 AI Agent，提升支付与协作效率</strong>：通过低摩擦的链上交易和复杂支付逻辑，让 AI Agent 可以无缝完成任务和交易</li>
+<li><strong>建立信任与安全</strong>：通过去中心化的治理和技术，为 Agent 提供透明的交易环境</li>
+<li><strong>激励生态参与者</strong>：构建可持续的经济模型，让节点、开发者和用户在生态中获益</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="2-note-chain-的解决方案">2. Note Chain 的解决方案<a href="#2-note-chain-的解决方案" class="hash-link" aria-label="直接链接到2. Note Chain 的解决方案" title="直接链接到2. Note Chain 的解决方案">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="21-ai-agent-的核心问题">2.1 AI Agent 的核心问题<a href="#21-ai-agent-的核心问题" class="hash-link" aria-label="直接链接到2.1 AI Agent 的核心问题" title="直接链接到2.1 AI Agent 的核心问题">​</a></h3>
+<p>随着 AI 技术的发展，AI Agent 已经逐步成为自动化经济的关键组成部分。然而，它们在实际运行中面临以下重大挑战：</p>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="1-支付与结算的效率问题">1. 支付与结算的效率问题<a href="#1-支付与结算的效率问题" class="hash-link" aria-label="直接链接到1. 支付与结算的效率问题" title="直接链接到1. 支付与结算的效率问题">​</a></h4>
+<p>现有支付系统（传统金融或其他区块链）存在以下缺陷：</p>
+<ul>
+<li><strong>交易延迟</strong>：很难满足 Agent 在高频、实时性场景中的支付需求</li>
+<li><strong>高交易成本</strong>：微支付场景的高额手续费显著增加了运行成本</li>
+<li><strong>有限支付支持</strong>：缺乏与复杂支付逻辑结合的能力，无法满足智能任务的多方支付与收益分配需求</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="2-信任与透明性不足">2. 信任与透明性不足<a href="#2-信任与透明性不足" class="hash-link" aria-label="直接链接到2. 信任与透明性不足" title="直接链接到2. 信任与透明性不足">​</a></h4>
+<ul>
+<li>AI Agent 的许多任务需要依赖外部数据源，但数据可能不准确或被篡改，影响任务执行的可靠性</li>
+<li>现有支付系统对任务执行结果的验证能力有限，难以满足自动化任务中对透明度和公平性的高要求</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="3-经济激励设计不完善">3. 经济激励设计不完善<a href="#3-经济激励设计不完善" class="hash-link" aria-label="直接链接到3. 经济激励设计不完善" title="直接链接到3. 经济激励设计不完善">​</a></h4>
+<ul>
+<li>大部分基础设施只关注数据存储或计算，缺乏为 Agent 提供公平、高效的收益分配机制</li>
+<li>缺少对生态参与者（开发者、节点运营者等）的激励，生态建设难 以持续</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="22-note-chain-的核心解决方案">2.2 Note Chain 的核心解决方案<a href="#22-note-chain-的核心解决方案" class="hash-link" aria-label="直接链接到2.2 Note Chain 的核心解决方案" title="直接链接到2.2 Note Chain 的核心解决方案">​</a></h3>
+<p>针对这些问题，Note Chain 提供了一个完整的区块链生态解决方案：</p>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="1-高效-layer-1-区块链">1. 高效 Layer 1 区块链<a href="#1-高效-layer-1-区块链" class="hash-link" aria-label="直接链接到1. 高效 Layer 1 区块链" title="直接链接到1. 高效 Layer 1 区块链">​</a></h4>
+<ul>
+<li>基于比特币的成熟 UTXO 模型设计，优化交易并行性与吞吐量，支持 <strong>3000+ TPS</strong>，轻松应对高频微支付需求</li>
+<li>通过内存池优化和零确认技术，确保交易在数秒内确认，实现实时结算</li>
+</ul>
+<p><strong>好处：</strong></p>
+<ul>
+<li><strong>高效率</strong>：秒级确认让 Agent 的任务执行不受支付延迟影响</li>
+<li><strong>低摩擦</strong>：极低的交易费用使得微支付和复杂支付更加可行</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="2-智能合约支持复杂工作流">2. 智能合约支持复杂工作流<a href="#2-智能合约支持复杂工作流" class="hash-link" aria-label="直接链接到2. 智能合约支持复杂工作流" title="直接链接到2. 智能合约支持复杂工作流">​</a></h4>
+<ul>
+<li><strong>Note Chain 的扩展智能合约能力</strong>允许 Agent 定义复杂的支付逻辑和协作任务：<!-- -->
+<ul>
+<li>支持<strong>多方支付</strong>和<strong>收益分配</strong></li>
+<li>支持按时间、事件或外部数据触发工作流的执行</li>
+</ul>
+</li>
+</ul>
+<p><strong>好处：</strong></p>
+<ul>
+<li><strong>灵活性</strong>：Agent 能够处理复杂场景，例如供应链支付、跨生态协作等</li>
+<li><strong>自动 化</strong>：智能合约确保任务的执行与支付透明可控，降低人为干预</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="3-去中心化-oracle-提供可信数据">3. 去中心化 Oracle 提供可信数据<a href="#3-去中心化-oracle-提供可信数据" class="hash-link" aria-label="直接链接到3. 去中心化 Oracle 提供可信数据" title="直接链接到3. 去中心化 Oracle 提供可信数据">​</a></h4>
+<ul>
+<li>Note Chain 内置 <strong>Oracle 系统</strong>，通过多节点验证的方式提供链下数据，为 Agent 的任务执行提供高可信度的外部信息</li>
+</ul>
+<p><strong>好处：</strong></p>
+<ul>
+<li><strong>数据可信</strong>：确保 Agent 能够访问准确、透明的链下数据</li>
+<li><strong>任务安全</strong>：Oracle 系统避免了数据篡改或单点故障风险</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="4-原生稳定币支付系统">4. 原生稳定币支付系统<a href="#4-原生稳定币支付系统" class="hash-link" aria-label="直接链接到4. 原生稳定币支付系统" title="直接链接到4. 原生稳定币支付系统">​</a></h4>
+<ul>
+<li>Note Chain 提供与 USDT/USDC 锚定的稳定币 <strong>NUST</strong>，用于链上支付和费用结算</li>
+<li>稳定币设计避免了市场波动对支付的影响</li>
+</ul>
+<p><strong>好处：</strong></p>
+<ul>
+<li><strong>支付稳定</strong>：Agent 的支付和收益分配能够在稳定币体系下高效完成</li>
+<li><strong>成本可控</strong>：避免了因代币价格波动导致的支付不确定性</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="5-dpos-共识机制与激励模型">5. DPoS 共识机制与激励模型<a href="#5-dpos-共识机制与激励模型" class="hash-link" aria-label="直接链接到5. DPoS 共识机制与激励模型" title="直接链接到5. DPoS 共识机制与激励模型">​</a></h4>
+<ul>
+<li>使用**委托权益证明（DPoS）**共识机制，通过 NOTE 持有者选举节点，确保高 效出块和网络安全</li>
+<li>节点收益来源于 Agent 支付的稳定币，按比例分配给出块节点与生态参与者</li>
+</ul>
+<p><strong>好处：</strong></p>
+<ul>
+<li><strong>经济驱动</strong>：为节点运营者和开发者提供稳定的收益来源，激励生态参与</li>
+<li><strong>可持续性</strong>：通过公平的分配机制支持生态的长期发展</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="23-note-chain-带来的优势">2.3 Note Chain 带来的优势<a href="#23-note-chain-带来的优势" class="hash-link" aria-label="直接链接到2.3 Note Chain 带来的优势" title="直接链接到2.3 Note Chain 带来的优势">​</a></h3>
+<ol>
+<li>
+<p><strong>全面支持 AI Agent 运行</strong></p>
+<ul>
+<li>提供高效的支付与结算，满足 Agent 对实时性和稳定性的需求</li>
+<li>支持复杂支付和协作逻辑，提升任务执行效率</li>
+</ul>
+</li>
+<li>
+<p><strong>去中心化与透明性</strong></p>
+<ul>
+<li>所有任务执行均在链上记录，确保过程透明、可追溯</li>
+<li>Oracle 系统为 Agent 提供可信数据，避免外部干扰</li>
+</ul>
+</li>
+<li>
+<p><strong>成本低、效率高</strong></p>
+<ul>
+<li>基于高性能 UTXO 模型设计，交易费用低于现有区块链</li>
+<li>零确认支付让 Agent 任务不受交易延迟限制</li>
+</ul>
+</li>
+<li>
+<p><strong>生态激励机制</strong></p>
+<ul>
+<li>NOTE 持有者与节点运营者的双向激励模型，确保社区参与度与治理能力</li>
+<li>为开发者提供工具和资源，吸引高质量应用开发</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="24-note-chain-的独特性">2.4 Note Chain 的独特性<a href="#24-note-chain-的独特性" class="hash-link" aria-label="直接链接到2.4 Note Chain 的独特性" title="直接链接到2.4 Note Chain 的独特性">​</a></h3>
+<p>与现有的区块链平台相比，Note Chain 在以下方面独树一帜：</p>
+<ul>
+<li><strong>专注于 AI Agent 场景</strong>：提供 专门优化的工作流和支付功能，支持 Agent 自治经济</li>
+<li><strong>稳定币驱动的经济模型</strong>：以 NUST 为核心，简化支付和收益分配流程</li>
+<li><strong>高性能 Layer 1 架构</strong>：通过优化比特币技术栈，直接在 L1 实现高频微支付和复杂支付逻辑</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="3-技术与架构">3. 技术与架构<a href="#3-技术与架构" class="hash-link" aria-label="直接链接到3. 技术与架构" title="直接链接到3. 技术与架构">​</a></h2>
+<p>Note Chain 的技术架构基于高度优化的 Layer 1 区块链，结合 DPoS 共识机制，支持 AI Agent 的分布式工作流运行、去中心化数据访问（Oracle），以及高效的区块链共识。通过创新的技术设计，Note Chain 为 AI Agent 提供了安全、高效、低摩擦的基础设施。</p>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="31-dpos-共识与节点运行机制">3.1 DPoS 共识与节点运行机制<a href="#31-dpos-共识与节点运行机制" class="hash-link" aria-label="直接链接到3.1 DPoS 共识与节点运行机制" title="直接链接到3.1 DPoS 共识与节点运行机制">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="311-dpos委托权益证明的设计">3.1.1 DPoS（委托权益证明）的设计<a href="#311-dpos委托权益证明的设计" class="hash-link" aria-label="直接链接到3.1.1 DPoS（委托权益证明）的设计" title="直接链接到3.1.1 DPoS（委托权益证明）的设计">​</a></h4>
+<ul>
+<li>
+<p><strong>抵押机制</strong>：</p>
+<ul>
+<li>持有 NOTE 代币的用户可以将代币抵押给候选节点</li>
+<li>通过投票选出可信节点参与区块链共识和工作流运行</li>
+</ul>
+</li>
+<li>
+<p><strong>高效共识</strong>：</p>
+<ul>
+<li>每轮出块由少数选举节点完成，降低网络开销并提升交易确认速度</li>
+<li>节点通过共识运行 Agent 工作流和 Oracle 数据验证，确保去中心化与高效性兼备</li>
+</ul>
+</li>
+<li>
+<p><strong>节点奖励</strong>：</p>
+<ul>
+<li>节点根据运行任务的复杂度与资源消耗获得奖励</li>
+<li>奖励来源于 Agent 支付的 NUST 稳定币</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="312-节点的多功能协作">3.1.2 节点的多功能协作<a href="#312-节点的多功能协作" class="hash-link" aria-label="直接链接到3.1.2 节点的多功能协作" title="直接链接到3.1.2 节点的多功能协作">​</a></h4>
+<p>Note Chain 的节点不仅参与区块链出块与验证，还通过 DPoS 共识协同运行以下任务：</p>
+<ol>
+<li>
+<p><strong>Agent 工作流</strong></p>
+<ul>
+<li>节点通过分布式执行 Agent 的任务逻辑</li>
+<li>确保任务的去中心化和高效完成</li>
+</ul>
+</li>
+<li>
+<p><strong>Oracle 数据处理</strong></p>
+<ul>
+<li>节点负责从链下数据源获取外部信息</li>
+<li>通过共识验证数据准确性</li>
+</ul>
+</li>
+<li>
+<p><strong>状态同步与结果存储</strong></p>
+<ul>
+<li>所有任务结果通过节点共识记录在链上</li>
+<li>形成公开可验证的状态更新</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="32-agent-工作流的实现">3.2 Agent 工作流的实现<a href="#32-agent-工作流的实现" class="hash-link" aria-label="直接链接到3.2 Agent 工作流的实现" title="直接链接到3.2 Agent 工作流的实现">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="321-工作流的定义与运行">3.2.1 工作流的定义与运行<a href="#321-工作流的定义与运行" class="hash-link" aria-label="直接链接到3.2.1 工作流的定义与运行" title="直接链接到3.2.1 工作流的定义与运行">​</a></h4>
+<ul>
+<li>
+<p><strong>工作流注册</strong></p>
+<ul>
+<li>Agent 的任务逻辑以智能合约形式部署到区块链</li>
+<li>节点根据任务定义自动分解为多个步骤（数据获取、计算与支付）</li>
+</ul>
+</li>
+<li>
+<p><strong>分布式运行</strong></p>
+<ul>
+<li>每个步骤由多个节点协同执行</li>
+<li>节点独立运行逻辑，并通过共识机制验证结果一致性</li>
+</ul>
+</li>
+<li>
+<p><strong>工作流完成</strong></p>
+<ul>
+<li>所有任务的最终状态由共识节点确认</li>
+<li>更新至区块链，形成完整的溯源记录</li>
+</ul>
+</li>
+</ul>
+<p><strong>示例：供应链 Agent 的工作流</strong></p>
+<ol>
+<li>Oracle 获取链下物流数据</li>
+<li>验证数据后，计算支付金额</li>
+<li>分别向供应商 A 和 B 发起支付</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="322-技术实现">3.2.2 技术实现<a href="#322-技术实现" class="hash-link" aria-label="直接链接到3.2.2 技术实现" title="直接链接到3.2.2 技术实现">​</a></h4>
+<ol>
+<li>
+<p><strong>智能合约驱动</strong></p>
+<ul>
+<li>合约定义任务逻辑，包括触发条件、执行步骤和验证规则</li>
+<li>每个节点运行相同逻辑，确保任务一致性</li>
+</ul>
+</li>
+<li>
+<p><strong>分布式任务处理</strong></p>
+<ul>
+<li>节点协作完成任务分解与执行</li>
+<li>结果通过共识确认</li>
+<li>分布式签名机制保障任务结果可信</li>
+</ul>
+</li>
+<li>
+<p><strong>工作流的并行性</strong></p>
+<ul>
+<li>基于 UTXO 模型的并行处理能力</li>
+<li>支持多个任务同时运行，无性能瓶颈</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="33-oracle-系统">3.3 Oracle 系统<a href="#33-oracle-系统" class="hash-link" aria-label="直接链接到3.3 Oracle 系统" title="直接链接到3.3 Oracle 系统">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="331-去中心化数据获取">3.3.1 去中心化数据获取<a href="#331-去中心化数据获取" class="hash-link" aria-label="直接链接到3.3.1 去中心化数据获取" title="直接链接到3.3.1 去中心化数据获取">​</a></h4>
+<ul>
+<li>Note Chain 内置 <strong>Oracle 系统</strong>，用于获取和验证外部数据</li>
+<li>支持多样化数据源：<!-- -->
+<ul>
+<li>市场价格</li>
+<li>物联网设备状态</li>
+<li>天气信息等</li>
+</ul>
+</li>
+<li>动态触发工作流执行</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="332-oracle-工作机制">3.3.2 Oracle 工作机制<a href="#332-oracle-工作机制" class="hash-link" aria-label="直接链接到3.3.2 Oracle 工作机制" title="直接链接到3.3.2 Oracle 工作机制">​</a></h4>
+<ol>
+<li>
+<p><strong>数据请求</strong></p>
+<ul>
+<li>Agent 提交数据请求</li>
+<li>节点通过标准化接口访问链下数据源</li>
+</ul>
+</li>
+<li>
+<p><strong>多节点验证</strong></p>
+<ul>
+<li>多个节点独立获取数据并对比结果</li>
+<li>通过共识确认最终数据值</li>
+</ul>
+</li>
+<li>
+<p><strong>数据存储</strong></p>
+<ul>
+<li>确认后的数据结果以交易形式写入区块链</li>
+<li>供智能合约调用</li>
+</ul>
+</li>
+</ol>
+<p><strong>优势：</strong></p>
+<ul>
+<li><strong>可信</strong>：数据通过多节点验证，避免单点故障和恶意操纵</li>
+<li><strong>实时</strong>：数据获取与验证过程快速高效，适合动态任务场景</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="34-共识与任务协作">3.4 共识与任务协作<a href="#34-共识与任务协作" class="hash-link" aria-label="直接链接到3.4 共识与任务协作" title="直接链接到3.4 共识与任务协作">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="341-共识机制的扩展">3.4.1 共识机制的扩展<a href="#341-共识机制的扩展" class="hash-link" aria-label="直接链接到3.4.1 共识机制的扩展" title="直接链接到3.4.1 共识机制的扩展">​</a></h4>
+<p>Note Chain 的 DPoS 共识机制不仅用于出块和交易验证，还支持以下协作任务：</p>
+<ol>
+<li>
+<p><strong>任务分发</strong></p>
+<ul>
+<li>智能合约根据任务逻辑进行分解</li>
+<li>将子任务分发给所有节点</li>
+</ul>
+</li>
+<li>
+<p><strong>结果验证</strong></p>
+<ul>
+<li>节点通过共识确认任务结果一致性</li>
+<li>确保执行 过程透明可信</li>
+</ul>
+</li>
+<li>
+<p><strong>任务存储</strong></p>
+<ul>
+<li>所有执行过程和结果存储在区块链上</li>
+<li>形成可追溯的公共记录</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="342-零确认安全">3.4.2 零确认安全<a href="#342-零确认安全" class="hash-link" aria-label="直接链接到3.4.2 零确认安全" title="直接链接到3.4.2 零确认安全">​</a></h4>
+<ul>
+<li>
+<p><strong>内存池优化</strong></p>
+<ul>
+<li>优化内存池广播与排序规则</li>
+<li>确保任务触发和交易处理的实时性</li>
+</ul>
+</li>
+<li>
+<p><strong>先入为主规则</strong></p>
+<ul>
+<li>防止双花攻击</li>
+<li>保障交易在零确认状态下的高安全性</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="35-技术架构的整体优势">3.5 技术架构的整体优势<a href="#35-技术架构的整体优势" class="hash-link" aria-label="直接链接到3.5 技术架构的整体优势" title="直接链接到3.5 技术架构的整体优势">​</a></h3>
+<ol>
+<li>
+<p><strong>高效性</strong></p>
+<ul>
+<li>基于 UTXO 模型优化的高并发处理，支持 3000+ TPS</li>
+<li>零确认安全机制，确保任务实时性与高效性</li>
+</ul>
+</li>
+<li>
+<p><strong>去中心化与可信</strong></p>
+<ul>
+<li>节点通过共识协作运行任务，确保结果透明、可信</li>
+<li>Oracle 系统避免数据源单点故障，提升数据安全性</li>
+</ul>
+</li>
+<li>
+<p><strong>开发友好性</strong></p>
+<ul>
+<li>模块化合约与工作流模板降低开发者门槛</li>
+<li>支持复杂任务逻辑，满足多样化场景需求</li>
+</ul>
+</li>
+<li>
+<p><strong>生态激励</strong></p>
+<ul>
+<li>节点、开发者和用户都能从运行任务中获益</li>
+<li>形成可持续发展的经济模型</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="4-经济与治理模型">4. 经济与治理模型<a href="#4-经济与治理模型" class="hash-link" aria-label="直接链接到4. 经 济与治理模型" title="直接链接到4. 经济与治理模型">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="41-收益来源">4.1 收益来源<a href="#41-收益来源" class="hash-link" aria-label="直接链接到4.1 收益来源" title="直接链接到4.1 收益来源">​</a></h3>
+<p>节点通过运行 Agent 工作流和 Oracle 系统获得稳定币奖励：</p>
+<ul>
+<li>
+<p><strong>工作流收益</strong></p>
+<ul>
+<li>根据任务的复杂度和资源消耗分配奖励</li>
+<li>支持动态调整收益比例</li>
+</ul>
+</li>
+<li>
+<p><strong>Oracle 收益</strong></p>
+<ul>
+<li>按数据处理量获得稳定币奖励</li>
+<li>确保数据提供的可持续性</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="42-收益分配">4.2 收益分配<a href="#42-收益分配" class="hash-link" aria-label="直接链接到4.2 收益分配" title="直接链接到4.2 收益分配">​</a></h3>
+<p>收益分配采用透明的比例机制：</p>
+<ol>
+<li>
+<p><strong>节点收益（70%）</strong></p>
+<ul>
+<li>出块节点奖励：40%</li>
+<li>验证者奖励：30%</li>
+</ul>
+</li>
+<li>
+<p><strong>生态基金（30%）</strong></p>
+<ul>
+<li>生态建设：15%</li>
+<li>开发者激励：10%</li>
+<li>社区治理：5%</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="43-去中心化治理">4.3 去中心化治理<a href="#43-去中心化治理" class="hash-link" aria-label="直接链接到4.3 去中心化治理" title="直接链接到4.3 去中心化治理">​</a></h3>
+<p>通过 DAO 机制实现生态治理：</p>
+<ul>
+<li>
+<p><strong>投票权重</strong></p>
+<ul>
+<li>基于 NOTE 持有量和锁定时间</li>
+<li>防止权力过度集中</li>
+</ul>
+</li>
+<li>
+<p><strong>治理范围</strong></p>
+<ul>
+<li>系统参数调整</li>
+<li>生态基金使用</li>
+<li>重大升级决策</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="5-稳定币-nust-的设计与应用">5. 稳定币 NUST 的设计与应用<a href="#5-稳定币-nust-的设计与应用" class="hash-link" aria-label="直接链接到5. 稳定币 NUST 的设计与应用" title="直接链接到5. 稳定币 NUST 的设计与应用">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="51-核心设计">5.1 核心设计<a href="#51-核心设计" class="hash-link" aria-label="直接链接到5.1 核心设计" title="直接链接到5.1 核心设计">​</a></h3>
+<ul>
+<li>
+<p><strong>锚定机制</strong></p>
+<ul>
+<li>与 USDT/USDC 1:1 锚定：1 NUST = 1 USDT/USDC</li>
+<li>确保支付稳定性和价值可预期</li>
+</ul>
+</li>
+<li>
+<p><strong>发行机制</strong></p>
+<ul>
+<li>开发商可将 USDT/USDC 转换为 NUST</li>
+<li>用于支付链上费用和任务奖励</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="52-发行与销毁">5.2 发行与销毁<a href="#52-发行与销毁" class="hash-link" aria-label="直接链接到5.2 发行与销毁" title="直接链接到5.2 发行与销毁">​</a></h3>
+<ul>
+<li>
+<p><strong>智能发行</strong></p>
+<ul>
+<li>NUST 的发行与实际支付需求挂钩</li>
+<li>确保无超发风险</li>
+<li>透明的发行记录</li>
+</ul>
+</li>
+<li>
+<p><strong>自动销毁</strong></p>
+<ul>
+<li>支持 NUST 随时兑换回 USDT/USDC</li>
+<li>多重签名保障赎回安全</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="53-流动性管理">5.3 流动性管理<a href="#53-流动性管理" class="hash-link" aria-label="直接链接到5.3 流动性管理" title="直接链接到5.3 流动性管理">​</a></h3>
+<ul>
+<li>
+<p><strong>AMM 流动性池</strong></p>
+<ul>
+<li>生态开发者提供流动性支持</li>
+<li>支持 NUST 与多链稳定币即时兑换</li>
+</ul>
+</li>
+<li>
+<p><strong>风险控制</strong></p>
+<ul>
+<li>设置兑换限额</li>
+<li>流动性储备监控</li>
+<li>紧急暂停机制</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="6-应用场景">6. 应用场景<a href="#6-应用场景" class="hash-link" aria-label="直接链接到6. 应用场景" title="直接链接到6. 应用场景">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="61-ai-agent-与人类">6.1 AI Agent 与人类<a href="#61-ai-agent-与人类" class="hash-link" aria-label="直接链接到6.1 AI Agent 与人类" title="直接链接到6.1 AI Agent 与人类">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="智能任务支付">智能任务支付<a href="#智能任务支付" class="hash-link" aria-label="直接链接到智能任务支付" title="直接链接到智能任务支付">​</a></h4>
+<ul>
+<li><strong>自动化服务</strong>
+<ul>
+<li>数据处理</li>
+<li>文档生成</li>
+<li>内容创作</li>
+</ul>
+</li>
+<li><strong>即时结算</strong>
+<ul>
+<li>按使用量计费</li>
+<li>自动化支付流程</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="资产管理">资产管理<a href="#资产管理" class="hash-link" aria-label="直接链接到资产管理" title="直接链接到资产管理">​</a></h4>
+<ul>
+<li><strong>投资自动化</strong>
+<ul>
+<li>智能投资组合管理</li>
+<li>风险控制</li>
+</ul>
+</li>
+<li><strong>收益分配</strong>
+<ul>
+<li>多方收益自动分配</li>
+<li>透明的收益记录</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="62-ai-agent-与-ai-agent">6.2 AI Agent 与 AI Agent<a href="#62-ai-agent-与-ai-agent" class="hash-link" aria-label="直接链接到6.2 AI Agent 与 AI Agent" title="直接链接到6.2 AI Agent 与 AI Agent">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="数据交易">数据交易<a href="#数据交易" class="hash-link" aria-label="直接链接到数据交易" title="直接链接到数据交易">​</a></h4>
+<ul>
+<li><strong>数据共享</strong>
+<ul>
+<li>Agent 间即时数据交换</li>
+<li>按需付费机制</li>
+</ul>
+</li>
+<li><strong>质量保证</strong>
+<ul>
+<li>数据可信度验证</li>
+<li>智能定价系统</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="协作执行">协作执行<a href="#协作执行" class="hash-link" aria-label="直接链接到协作执行" title="直接链接到协作执行">​</a></h4>
+<ul>
+<li><strong>多 Agent 协同</strong>
+<ul>
+<li>复杂任务分解</li>
+<li>协作收益分配</li>
+</ul>
+</li>
+<li><strong>效率提升</strong>
+<ul>
+<li>自动化工作流</li>
+<li>实时结算机制</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="63-ai-agent-与物理世界">6.3 AI Agent 与物理世界<a href="#63-ai-agent-与物理世界" class="hash-link" aria-label="直接链接到6.3 AI Agent 与物理世界" title="直接链接到6.3 AI Agent 与物理世界">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="供应链管理">供应链管理<a href="#供应链管理" class="hash-link" aria-label="直接链接到供应链管理" title="直接链接到供应链管理">​</a></h4>
+<ul>
+<li><strong>智能物流</strong>
+<ul>
+<li>自动化订单处理</li>
+<li>实时支付结算</li>
+</ul>
+</li>
+<li><strong>库存优化</strong>
+<ul>
+<li>智能补货系统</li>
+<li>动态定价策略</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="能源与设备租赁">能源与设备租赁<a href="#能源与设备租赁" class="hash-link" aria-label="直接链接到能源与设备租赁" title="直接链接到能源与设备租赁">​</a></h4>
+<ul>
+<li><strong>智能计量</strong>
+<ul>
+<li>用量实时监控</li>
+<li>自动化计费</li>
+</ul>
+</li>
+<li><strong>设备管理</strong>
+<ul>
+<li>远程控制与监测</li>
+<li>按使用付费</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="7-长远愿景">7. 长远愿景<a href="#7-长远愿景" class="hash-link" aria-label="直接链接到7. 长远愿景" title="直接链接到7. 长远愿景">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="71-未来经济的基础设施">7.1 未来经济的基础设施<a href="#71-未来经济的基础设施" class="hash-link" aria-label="直接链接到7.1 未来经济的基础设施" title="直接链接到7.1 未来经济的基础设施">​</a></h3>
+<p>Note Chain 致力于成为：</p>
+<ul>
+<li><strong>AI 自动化经济的核心支柱</strong></li>
+<li><strong>去中心化金融服务的创新平台</strong></li>
+<li><strong>跨链资产互操作的桥梁</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="72-推动生态自我进化">7.2 推动生态自我进化<a href="#72-推动生态自我进化" class="hash-link" aria-label="直接链接到7.2 推动生态自我进化" title="直接链接到7.2 推动生态自我进化">​</a></h3>
+<p>通过以下机制实现生态持续发展：</p>
+<ul>
+<li><strong>社区驱动的治理</strong></li>
+<li><strong>技术创新的激励</strong></li>
+<li><strong>多方参与的生态建设</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="73-连接多链与现实世界">7.3 连接多链与现实世界<a href="#73-连接多链与现实世界" class="hash-link" aria-label="直接链接到7.3 连接多链与现实世界" title="直接链接到7.3 连接多链与现实世界">​</a></h3>
+<ul>
+<li>
+<p><strong>跨链互操作</strong></p>
+<ul>
+<li>支持多链资产整合</li>
+<li>统一的支付标准</li>
+</ul>
+</li>
+<li>
+<p><strong>现实世界连接</strong></p>
+<ul>
+<li>物联网设备接入</li>
+<li>实体经济整合</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="8-路线图">8. 路线图<a href="#8-路线图" class="hash-link" aria-label="直接链接到8. 路线图" title="直接链接到8. 路线图">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="阶段-1基础设施搭建">阶段 1：基础设施搭建<a href="#阶段-1基础设施搭建" class="hash-link" aria-label="直接链接到阶段 1：基础设施搭建" title="直接链接到阶段 1：基础设施搭建">​</a></h3>
+<ul>
+<li>实现高性能 Layer 1 区块链与 DPoS 共识</li>
+<li>发布原生稳定币 NUST 和跨链兑换功能</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="阶段-2生态扩展">阶段 2：生态扩展<a href="#阶段-2 生态扩展" class="hash-link" aria-label="直接链接到阶段 2：生态扩展" title="直接链接到阶段 2：生态扩展">​</a></h3>
+<ul>
+<li>集成 Oracle 系统，支持链下数据访问</li>
+<li>吸引开发者构建智能合约和工作流模板</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="阶段-3治理与开放合作">阶段 3：治理与开放合作<a href="#阶段-3治理与开放合作" class="hash-link" aria-label="直接链接到阶段 3：治理与开放合作" title="直接链接到阶段 3：治理与开放合作">​</a></h3>
+<ul>
+<li>启动 DAO 治理，赋权社区参与生态决策</li>
+<li>支持更多稳定币和跨链资产整合</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="9-结论">9. 结论<a href="#9-结论" class="hash-link" aria-label="直接链接到9. 结论" title="直接链接到9. 结论">​</a></h2>
+<p>Note Chain 通过创新的技术架构与经济设计，为 AI 代理经济提供了一个<strong>高效</strong>、<strong>可信</strong>、<strong>可持续</strong>的基础设施。我们的方案从根本上解决了 AI Agent 运行中的核心问题：</p>
+<ul>
+<li><strong>高效支付</strong>：支持高频微支付和复杂支付逻辑</li>
+<li><strong>可信数据</strong>：去中心化 Oracle 确保数据可靠性</li>
+<li><strong>激励机制</strong>：合理的经济模型推动生态发展</li>
+</ul>
+<p>我们期待与开发者、用户和社区伙伴共同构建一个更加智能化、开放和繁荣的区块链生态系统。</p>
+<p><strong>加入 Note Chain，一起创造未来！</strong></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文档页面"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh/docs/research/action"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">Bitcoin/Note Actions (草案)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_Hx9M thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#目录" class="table-of-contents__link toc-highlight">目录</a></li><li><a href="#1-背景与使命" class="table-of-contents__link toc-highlight">1. 背景与使命</a><ul><li><a href="#11-背景ai-代理经济的崛起" class="table-of-contents__link toc-highlight">1.1 背景：AI 代理经济的崛起</a></li><li><a href="#12-note-chain-的使命" class="table-of-contents__link toc-highlight">1.2 Note Chain 的使命</a></li></ul></li><li><a href="#2-note-chain-的解决方案" class="table-of-contents__link toc-highlight">2. Note Chain 的解决方案</a><ul><li><a href="#21-ai-agent-的核心问题" class="table-of-contents__link toc-highlight">2.1 AI Agent 的核心问题</a></li><li><a href="#22-note-chain-的核心解决方案" class="table-of-contents__link toc-highlight">2.2 Note Chain 的核心解决方案</a></li><li><a href="#23-note-chain-带来的优势" class="table-of-contents__link toc-highlight">2.3 Note Chain 带来的优势</a></li><li><a href="#24-note-chain-的独特性" class="table-of-contents__link toc-highlight">2.4 Note Chain 的独特性</a></li></ul></li><li><a href="#3-技术与架构" class="table-of-contents__link toc-highlight">3. 技术与架构</a><ul><li><a href="#31-dpos-共识与节点运行机制" class="table-of-contents__link toc-highlight">3.1 DPoS 共识与节点运行机制</a></li><li><a href="#32-agent-工作流的实现" class="table-of-contents__link toc-highlight">3.2 Agent 工作流的实现</a></li><li><a href="#33-oracle-系统" class="table-of-contents__link toc-highlight">3.3 Oracle 系统</a></li><li><a href="#34-共识与任务协作" class="table-of-contents__link toc-highlight">3.4 共识与任务协作</a></li><li><a href="#35-技术架构的整体优势" class="table-of-contents__link toc-highlight">3.5 技术架构的整体优势</a></li></ul></li><li><a href="#4-经济与治理模型" class="table-of-contents__link toc-highlight">4. 经济与治理模型</a><ul><li><a href="#41-收益来源" class="table-of-contents__link toc-highlight">4.1 收益来源</a></li><li><a href="#42-收益分配" class="table-of-contents__link toc-highlight">4.2 收益分配</a></li><li><a href="#43-去中心化治理" class="table-of-contents__link toc-highlight">4.3 去中心化治理</a></li></ul></li><li><a href="#5-稳定币-nust-的设计与应用" class="table-of-contents__link toc-highlight">5. 稳定币 NUST 的设计与应用</a><ul><li><a href="#51-核心设计" class="table-of-contents__link toc-highlight">5.1 核心设计</a></li><li><a href="#52-发行与销毁" class="table-of-contents__link toc-highlight">5.2 发行与销毁</a></li><li><a href="#53-流动性管理" class="table-of-contents__link toc-highlight">5.3 流动性管理</a></li></ul></li><li><a href="#6-应用场景" class="table-of-contents__link toc-highlight">6. 应用场景</a><ul><li><a href="#61-ai-agent-与人类" class="table-of-contents__link toc-highlight">6.1 AI Agent 与人类</a></li><li><a href="#62-ai-agent-与-ai-agent" class="table-of-contents__link toc-highlight">6.2 AI Agent 与 AI Agent</a></li><li><a href="#63-ai-agent-与物理世界" class="table-of-contents__link toc-highlight">6.3 AI Agent 与物理世界</a></li></ul></li><li><a href="#7-长远愿景" class="table-of-contents__link toc-highlight">7. 长远愿景</a><ul><li><a href="#71-未来经济的基础设施" class="table-of-contents__link toc-highlight">7.1 未来经济的基础设施</a></li><li><a href="#72-推动生态自我进化" class="table-of-contents__link toc-highlight">7.2 推动生态自我进化</a></li><li><a href="#73-连接多链与现实世界" class="table-of-contents__link toc-highlight">7.3 连接多链与现实世界</a></li></ul></li><li><a href="#8-路线图" class="table-of-contents__link toc-highlight">8. 路线图</a><ul><li><a href="#阶段-1基础设施搭建" class="table-of-contents__link toc-highlight">阶段 1：基础设施搭建</a></li><li><a href="#阶段-2生态扩展" class="table-of-contents__link toc-highlight">阶段 2：生态扩展</a></li><li><a href="#阶段-3治理与开放合作" class="table-of-contents__link toc-highlight">阶段 3：治理与开放合作</a></li></ul></li><li><a href="#9-结论" class="table-of-contents__link toc-highlight">9. 结论</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh/docs/protocol">协议</a></li></ul></div><div class="col footer__col"><div class="footer__title">社区</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://t.me/NoteProtocol_org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/tGBHKDPkF5" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">X / Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh/blog">博客</a></li><li class="footer__item"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Note Protocol. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>

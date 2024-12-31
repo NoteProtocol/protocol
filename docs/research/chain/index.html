@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-research/chain" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Note Chain Whitepaper (Draft) | Note Protocol</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://noteprotocol.org/img/social-card.png"><meta data-rh="true" name="twitter:image" content="https://noteprotocol.org/img/social-card.png"><meta data-rh="true" property="og:url" content="https://noteprotocol.org/docs/research/chain"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Note Chain Whitepaper (Draft) | Note Protocol"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/img/favicon.png"><link data-rh="true" rel="canonical" href="https://noteprotocol.org/docs/research/chain"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/docs/research/chain" hreflang="en"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/zh/docs/research/chain" hreflang="zh"><link data-rh="true" rel="alternate" href="https://noteprotocol.org/docs/research/chain" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Note Protocol RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Note Protocol Atom Feed">
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6CXC4X888"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-T6CXC4X888",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.ce16c13b.css">
+<script src="/assets/js/runtime~main.1d958265.js" defer="defer"></script>
+<script src="/assets/js/main.c881a274.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_ivH7" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Note Protocol" class="themedComponent_J2ST themedComponent--light_YCzB"><img src="/img/logo.png" alt="Note Protocol" class="themedComponent_J2ST themedComponent--dark_QXnt"></div><b class="navbar__title text--truncate">Note Protocol</b></a><a class="navbar__item navbar__link" href="/docs/protocol/">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/research/action">Research</a><a class="navbar__item navbar__link" href="/docs/tutorial/">Tutorial</a><a class="navbar__item navbar__link" href="/blog">Blog</a><a class="navbar__item navbar__link" href="/docs/community/">Community</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_Fh05"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>English</a><ul class="dropdown__menu"><li><a href="/docs/research/chain" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="en">English</a></li><li><a href="/zh/docs/research/chain" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh">中文</a></li></ul></div><div class="toggle_APyT colorModeToggle_zPon"><button class="clean-btn toggleButton_sXzS toggleButtonDisabled_H9vp" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_afKI"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_z4D8"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_rLiG"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper__iUm"><div class="docsWrapper_IMLT"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_laB5" type="button"></button><div class="docRoot_FJ9S"><aside class="theme-doc-sidebar-container docSidebarContainer_TQaT"><div class="sidebarViewport_WvL_"><div class="sidebar_diVX"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_KTVW"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/research/action">Bitcoin/Note Actions (Draft)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/research/chain">Note Chain Whitepaper (Draft)</a></li></ul></nav></div></div></aside><main class="docMainContainer_LXkU"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_MzWx"><div class="docItemContainer_mvqz"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_cT2r" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon__JPp"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Note Chain Whitepaper (Draft)</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_e0OZ theme-doc-toc-mobile tocMobile_va5u"><button type="button" class="clean-btn tocCollapsibleButton_qa9_">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Note Chain Whitepaper (Draft)</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li>Background and Mission</li>
+<li>Note Chain&#x27;s Solution</li>
+<li>Technology and Architecture</li>
+<li>Economic and Governance Model</li>
+<li>Design and Application of Stablecoin NUST</li>
+<li>Application Scenarios</li>
+<li>Long-term Vision</li>
+<li>Roadmap</li>
+<li>Conclusion</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="1-background-and-mission">1. Background and Mission<a href="#1-background-and-mission" class="hash-link" aria-label="Direct link to 1. Background and Mission" title="Direct link to 1. Background and Mission">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="11-background-the-rise-of-the-ai-agent-economy">1.1 Background: The Rise of the AI Agent Economy<a href="#11-background-the-rise-of-the-ai-agent-economy" class="hash-link" aria-label="Direct link to 1.1 Background: The Rise of the AI Agent Economy" title="Direct link to 1.1 Background: The Rise of the AI Agent Economy">​</a></h3>
+<p>With the rapid development of artificial intelligence (AI), <strong>AI Agents</strong> are becoming a significant driving force in the future economy. An AI Agent is an intelligent entity capable of autonomously executing complex tasks, such as quantitative trading, data analysis, and supply chain optimization. They not only serve humans but also collaborate with each other, forming a new autonomous economic ecosystem.</p>
+<p>However, the rise of this <strong>AI Agent Economy</strong> faces several key challenges:</p>
+<ul>
+<li><strong>Inefficient Payment and Settlement</strong>: Existing payment systems struggle to support the high-frequency, low-friction micropayments required by AI Agents.</li>
+<li><strong>Lack of Trust and Transparency</strong>: Traditional payment and settlement methods lack decentralized trust mechanisms, failing to meet the security needs of Agents.</li>
+<li><strong>Incomplete Economic Incentive Design</strong>: There is a lack of unified infrastructure for AI Agents and ecosystem participants to collaborate and benefit.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="12-mission-of-note-chain">1.2 Mission of Note Chain<a href="#12-mission-of-note-chain" class="hash-link" aria-label="Direct link to 1.2 Mission of Note Chain" title="Direct link to 1.2 Mission of Note Chain">​</a></h3>
+<p><strong>The mission of Note Chain</strong> is to provide a <strong>decentralized, trustworthy, and efficient</strong> financial infrastructure for the AI Agent Economy.</p>
+<p>We are committed to:</p>
+<ol>
+<li><strong>Empowering AI Agents to Enhance Payment and Collaboration Efficiency</strong>: Through low-friction on-chain transactions and complex payment logic, enabling AI Agents to seamlessly complete tasks and transactions.</li>
+<li><strong>Establishing Trust and Security</strong>: Providing a transparent transaction environment for Agents through decentralized governance and technology.</li>
+<li><strong>Incentivizing Ecosystem Participants</strong>: Building a sustainable economic model that allows nodes, developers, and users to benefit within the ecosystem.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="2-note-chains-solution">2. Note Chain&#x27;s Solution<a href="#2-note-chains-solution" class="hash-link" aria-label="Direct link to 2. Note Chain&#x27;s Solution" title="Direct link to 2. Note Chain&#x27;s Solution">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="21-core-issues-of-ai-agents">2.1 Core Issues of AI Agents<a href="#21-core-issues-of-ai-agents" class="hash-link" aria-label="Direct link to 2.1 Core Issues of AI Agents" title="Direct link to 2.1 Core Issues of AI Agents">​</a></h3>
+<p>As AI technology advances, AI Agents have gradually become a key component of the automated economy. However, they face significant challenges in actual operation:</p>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="1-efficiency-issues-in-payment-and-settlement">1. Efficiency Issues in Payment and Settlement<a href="#1-efficiency-issues-in-payment-and-settlement" class="hash-link" aria-label="Direct link to 1. Efficiency Issues in Payment and Settlement" title="Direct link to 1. Efficiency Issues in Payment and Settlement">​</a></h4>
+<p>Existing payment systems (traditional finance or other blockchains) have the following shortcomings:</p>
+<ul>
+<li><strong>Transaction Delays</strong>: Difficult to meet the payment needs of Agents in high-frequency, real-time scenarios.</li>
+<li><strong>High Transaction Costs</strong>: High fees in micropayment scenarios significantly increase operating costs.</li>
+<li><strong>Limited Payment Support</strong>: Lack of ability to integrate with complex payment logic, unable to meet the needs of multi-party payments and revenue distribution in intelligent tasks.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="2-lack-of-trust-and-transparency">2. Lack of Trust and Transparency<a href="#2-lack-of-trust-and-transparency" class="hash-link" aria-label="Direct link to 2. Lack of Trust and Transparency" title="Direct link to 2. Lack of Trust and Transparency">​</a></h4>
+<ul>
+<li>Many tasks of AI Agents rely on external data sources, but the data may be inaccurate or tampered with, affecting the reliability of task execution.</li>
+<li>Existing payment systems have limited ability to verify task execution results, failing to meet the high requirements for transparency and fairness in automated tasks.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="3-incomplete-economic-incentive-design">3. Incomplete Economic Incentive Design<a href="#3-incomplete-economic-incentive-design" class="hash-link" aria-label="Direct link to 3. Incomplete Economic Incentive Design" title="Direct link to 3. Incomplete Economic Incentive Design">​</a></h4>
+<ul>
+<li>Most infrastructures focus only on data storage or computation, lacking a fair and efficient revenue distribution mechanism for Agents.</li>
+<li>Lack of incentives for ecosystem participants (developers, node operators, etc.), making ecosystem construction unsustainable.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="22-core-solutions-of-note-chain">2.2 Core Solutions of Note Chain<a href="#22-core-solutions-of-note-chain" class="hash-link" aria-label="Direct link to 2.2 Core Solutions of Note Chain" title="Direct link to 2.2 Core Solutions of Note Chain">​</a></h3>
+<p>To address these issues, Note Chain provides a comprehensive blockchain ecosystem solution:</p>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="1-efficient-layer-1-blockchain">1. Efficient Layer 1 Blockchain<a href="#1-efficient-layer-1-blockchain" class="hash-link" aria-label="Direct link to 1. Efficient Layer 1 Blockchain" title="Direct link to 1. Efficient Layer 1 Blockchain">​</a></h4>
+<ul>
+<li>Designed based on the mature UTXO model of Bitcoin, optimizing transaction parallelism and throughput, supporting <strong>3000+ TPS</strong>, easily meeting the needs of high-frequency micropayments.</li>
+<li>Ensures transaction confirmation within seconds through memory pool optimization and zero-confirmation technology, achieving real-time settlement.</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>High Efficiency</strong>: Second-level confirmation ensures that Agent tasks are not affected by payment delays.</li>
+<li><strong>Low Friction</strong>: Extremely low transaction fees make micropayments and complex payments more feasible.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="2-smart-contract-support-for-complex-workflows">2. Smart Contract Support for Complex Workflows<a href="#2-smart-contract-support-for-complex-workflows" class="hash-link" aria-label="Direct link to 2. Smart Contract Support for Complex Workflows" title="Direct link to 2. Smart Contract Support for Complex Workflows">​</a></h4>
+<ul>
+<li><strong>Note Chain&#x27;s extended smart contract capabilities</strong> allow Agents to define complex payment logic and collaborative tasks:<!-- -->
+<ul>
+<li>Supports <strong>multi-party payments</strong> and <strong>revenue distribution</strong>.</li>
+<li>Supports workflows triggered by time, events, or external data.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Flexibility</strong>: Agents can handle complex scenarios, such as supply chain payments and cross-ecosystem collaboration.</li>
+<li><strong>Automation</strong>: Smart contracts ensure that task execution and payments are transparent and controllable, reducing human intervention.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="3-decentralized-oracle-providing-trusted-data">3. Decentralized Oracle Providing Trusted Data<a href="#3-decentralized-oracle-providing-trusted-data" class="hash-link" aria-label="Direct link to 3. Decentralized Oracle Providing Trusted Data" title="Direct link to 3. Decentralized Oracle Providing Trusted Data">​</a></h4>
+<ul>
+<li>Note Chain has a built-in <strong>Oracle system</strong>, providing off-chain data through multi-node verification, offering highly reliable external information for Agent task execution.</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Data Trustworthiness</strong>: Ensures that Agents can access accurate and transparent off-chain data.</li>
+<li><strong>Task Security</strong>: The Oracle system avoids data tampering or single-point failure risks.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="4-native-stablecoin-payment-system">4. Native Stablecoin Payment System<a href="#4-native-stablecoin-payment-system" class="hash-link" aria-label="Direct link to 4. Native Stablecoin Payment System" title="Direct link to 4. Native Stablecoin Payment System">​</a></h4>
+<ul>
+<li>Note Chain provides a stablecoin <strong>NUST</strong> pegged to USDT/USDC for on-chain payments and fee settlements.</li>
+<li>The stablecoin design avoids the impact of market volatility on payments.</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Stable Payments</strong>: Agent payments and revenue distribution can be efficiently completed within the stablecoin system.</li>
+<li><strong>Cost Control</strong>: Avoids payment uncertainties caused by token price fluctuations.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="5-dpos-consensus-mechanism-and-incentive-model">5. DPoS Consensus Mechanism and Incentive Model<a href="#5-dpos-consensus-mechanism-and-incentive-model" class="hash-link" aria-label="Direct link to 5. DPoS Consensus Mechanism and Incentive Model" title="Direct link to 5. DPoS Consensus Mechanism and Incentive Model">​</a></h4>
+<ul>
+<li>Uses <strong>Delegated Proof of Stake (DPoS)</strong> consensus mechanism, electing nodes through NOTE holders to ensure efficient block production and network security.</li>
+<li>Node revenue comes from stablecoins paid by Agents, distributed proportionally to block-producing nodes and ecosystem participants.</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Economic Drive</strong>: Provides a stable source of income for node operators and developers, incentivizing ecosystem participation.</li>
+<li><strong>Sustainability</strong>: Supports the long-term development of the ecosystem through a fair distribution mechanism.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="23-advantages-brought-by-note-chain">2.3 Advantages Brought by Note Chain<a href="#23-advantages-brought-by-note-chain" class="hash-link" aria-label="Direct link to 2.3 Advantages Brought by Note Chain" title="Direct link to 2.3 Advantages Brought by Note Chain">​</a></h3>
+<ol>
+<li>
+<p><strong>Comprehensive Support for AI Agent Operations</strong></p>
+<ul>
+<li>Provides efficient payment and settlement, meeting the real-time and stability needs of Agents.</li>
+<li>Supports complex payment and collaboration logic, enhancing task execution efficiency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Decentralization and Transparency</strong></p>
+<ul>
+<li>All task executions are recorded on-chain, ensuring process transparency and traceability.</li>
+<li>The Oracle system provides trusted data for Agents, avoiding external interference.</li>
+</ul>
+</li>
+<li>
+<p><strong>Low Cost, High Efficiency</strong></p>
+<ul>
+<li>Designed based on a high-performance UTXO model, transaction fees are lower than existing blockchains.</li>
+<li>Zero-confirmation payments ensure that Agent tasks are not limited by transaction delays.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecosystem Incentive Mechanism</strong></p>
+<ul>
+<li>A dual incentive model for NOTE holders and node operators ensures community participation and governance capability.</li>
+<li>Provides tools and resources for developers, attracting high-quality application development.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="24-uniqueness-of-note-chain">2.4 Uniqueness of Note Chain<a href="#24-uniqueness-of-note-chain" class="hash-link" aria-label="Direct link to 2.4 Uniqueness of Note Chain" title="Direct link to 2.4 Uniqueness of Note Chain">​</a></h3>
+<p>Compared to existing blockchain platforms, Note Chain stands out in the following aspects:</p>
+<ul>
+<li><strong>Focus on AI Agent Scenarios</strong>: Provides specially optimized workflows and payment functions to support the autonomous economy of Agents.</li>
+<li><strong>Stablecoin-Driven Economic Model</strong>: Simplifies payment and revenue distribution processes with NUST at its core.</li>
+<li><strong>High-Performance Layer 1 Architecture</strong>: Optimizes the Bitcoin technology stack to directly implement high-frequency micropayments and complex payment logic on L1.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="3-technology-and-architecture">3. Technology and Architecture<a href="#3-technology-and-architecture" class="hash-link" aria-label="Direct link to 3. Technology and Architecture" title="Direct link to 3. Technology and Architecture">​</a></h2>
+<p>Note Chain&#x27;s technical architecture is based on a highly optimized Layer 1 blockchain, combined with a DPoS consensus mechanism, supporting distributed workflow operations of AI Agents, decentralized data access (Oracle), and efficient blockchain consensus. Through innovative technical design, Note Chain provides a secure, efficient, and low-friction infrastructure for AI Agents.</p>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="31-dpos-consensus-and-node-operation-mechanism">3.1 DPoS Consensus and Node Operation Mechanism<a href="#31-dpos-consensus-and-node-operation-mechanism" class="hash-link" aria-label="Direct link to 3.1 DPoS Consensus and Node Operation Mechanism" title="Direct link to 3.1 DPoS Consensus and Node Operation Mechanism">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="311-design-of-dpos-delegated-proof-of-stake">3.1.1 Design of DPoS (Delegated Proof of Stake)<a href="#311-design-of-dpos-delegated-proof-of-stake" class="hash-link" aria-label="Direct link to 3.1.1 Design of DPoS (Delegated Proof of Stake)" title="Direct link to 3.1.1 Design of DPoS (Delegated Proof of Stake)">​</a></h4>
+<ul>
+<li>
+<p><strong>Staking Mechanism</strong>:</p>
+<ul>
+<li>Users holding NOTE tokens can stake their tokens to candidate nodes.</li>
+<li>Elect trusted nodes through voting to participate in blockchain consensus and workflow operations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Efficient Consensus</strong>:</p>
+<ul>
+<li>Each round of block production is completed by a few elected nodes, reducing network overhead and improving transaction confirmation speed.</li>
+<li>Nodes run Agent workflows and Oracle data verification through consensus, ensuring decentralization and efficiency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Node Rewards</strong>:</p>
+<ul>
+<li>Nodes receive rewards based on the complexity and resource consumption of running tasks.</li>
+<li>Rewards come from NUST stablecoins paid by Agents.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="312-multi-functional-collaboration-of-nodes">3.1.2 Multi-Functional Collaboration of Nodes<a href="#312-multi-functional-collaboration-of-nodes" class="hash-link" aria-label="Direct link to 3.1.2 Multi-Functional Collaboration of Nodes" title="Direct link to 3.1.2 Multi-Functional Collaboration of Nodes">​</a></h4>
+<p>Note Chain&#x27;s nodes not only participate in blockchain block production and verification but also collaborate through DPoS consensus to run the following tasks:</p>
+<ol>
+<li>
+<p><strong>Agent Workflows</strong></p>
+<ul>
+<li>Nodes execute Agent task logic in a distributed manner.</li>
+<li>Ensure decentralized and efficient task completion.</li>
+</ul>
+</li>
+<li>
+<p><strong>Oracle Data Processing</strong></p>
+<ul>
+<li>Nodes are responsible for obtaining external information from off-chain data sources.</li>
+<li>Verify data accuracy through consensus.</li>
+</ul>
+</li>
+<li>
+<p><strong>State Synchronization and Result Storage</strong></p>
+<ul>
+<li>All task results are recorded on-chain through node consensus.</li>
+<li>Form publicly verifiable state updates.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="32-implementation-of-agent-workflows">3.2 Implementation of Agent Workflows<a href="#32-implementation-of-agent-workflows" class="hash-link" aria-label="Direct link to 3.2 Implementation of Agent Workflows" title="Direct link to 3.2 Implementation of Agent Workflows">  ​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="321-definition-and-execution-of-workflows">3.2.1 Definition and Execution of Workflows<a href="#321-definition-and-execution-of-workflows" class="hash-link" aria-label="Direct link to 3.2.1 Definition and Execution of Workflows" title="Direct link to 3.2.1 Definition and Execution of Workflows">​</a></h4>
+<ul>
+<li>
+<p><strong>Workflow Registration</strong></p>
+<ul>
+<li>Agent task logic is deployed to the blockchain in the form of smart contracts.</li>
+<li>Nodes automatically decompose tasks into multiple steps (data acquisition, computation, and payment) based on task definitions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Distributed Execution</strong></p>
+<ul>
+<li>Each step is collaboratively executed by multiple nodes.</li>
+<li>Nodes independently run logic and verify result consistency through consensus mechanisms.</li>
+</ul>
+</li>
+<li>
+<p><strong>Workflow Completion</strong></p>
+<ul>
+<li>The final state of all tasks is confirmed by consensus nodes.</li>
+<li>Updated to the blockchain, forming a complete traceable record.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example: Supply Chain Agent Workflow</strong></p>
+<ol>
+<li>Oracle obtains off-chain logistics data.</li>
+<li>Calculate payment amount after data verification.</li>
+<li>Initiate payments to suppliers A and B.</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="322-technical-implementation">3.2.2 Technical Implementation<a href="#322-technical-implementation" class="hash-link" aria-label="Direct link to 3.2.2 Technical Implementation" title="Direct link to 3.2.2 Technical Implementation">​</a></h4>
+<ol>
+<li>
+<p><strong>Smart Contract-Driven</strong></p>
+<ul>
+<li>Contracts define task logic, including trigger conditions, execution steps, and verification rules.</li>
+<li>Each node runs the same logic, ensuring task consistency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Distributed Task Processing</strong></p>
+<ul>
+<li>Nodes collaborate to complete task decomposition and execution.</li>
+<li>Results are confirmed through consensus.</li>
+<li>Distributed signature mechanism ensures task result trustworthiness.</li>
+</ul>
+</li>
+<li>
+<p><strong>Parallelism of Workflows</strong></p>
+<ul>
+<li>Based on the parallel processing capability of the UTXO model.</li>
+<li>Supports multiple tasks running simultaneously without performance bottlenecks.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="33-oracle-system">3.3 Oracle System<a href="#33-oracle-system" class="hash-link" aria-label="Direct link to 3.3 Oracle System" title="Direct link to 3.3 Oracle System">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="331-decentralized-data-acquisition">3.3.1 Decentralized Data Acquisition<a href="#331-decentralized-data-acquisition" class="hash-link" aria-label="Direct link to 3.3.1 Decentralized Data Acquisition" title="Direct link to 3.3.1 Decentralized Data Acquisition">​</a></h4>
+<ul>
+<li>Note Chain has a built-in <strong>Oracle system</strong> for acquiring and verifying external data.</li>
+<li>Supports diverse data sources:<!-- -->
+<ul>
+<li>Market prices</li>
+<li>IoT device status</li>
+<li>Weather information, etc.</li>
+</ul>
+</li>
+<li>Dynamically triggers workflow execution.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="332-oracle-working-mechanism">3.3.2 Oracle Working Mechanism<a href="#332-oracle-working-mechanism" class="hash-link" aria-label="Direct link to 3.3.2 Oracle Working Mechanism" title="Direct link to 3.3.2 Oracle Working Mechanism">​</a></h4>
+<ol>
+<li>
+<p><strong>Data Request</strong></p>
+<ul>
+<li>Agent submits data requests.</li>
+<li>Nodes access off-chain data sources through standardized interfaces.</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-Node Verification</strong></p>
+<ul>
+<li>Multiple nodes independently obtain data and compare results.</li>
+<li>Confirm final data value through consensus.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Storage</strong></p>
+<ul>
+<li>Confirmed data results are written to the blockchain in the form of transactions.</li>
+<li>Available for smart contract calls.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li><strong>Trustworthy</strong>: Data is verified by multiple nodes, avoiding single-point failures and malicious manipulation.</li>
+<li><strong>Real-Time</strong>: The data acquisition and verification process is fast and efficient, suitable for dynamic task scenarios.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="34-consensus-and-task-collaboration">3.4 Consensus and Task Collaboration<a href="#34-consensus-and-task-collaboration" class="hash-link" aria-label="Direct link to 3.4 Consensus and Task Collaboration" title="Direct link to 3.4 Consensus and Task Collaboration">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="341-extension-of-consensus-mechanism">3.4.1 Extension of Consensus Mechanism<a href="#341-extension-of-consensus-mechanism" class="hash-link" aria-label="Direct link to 3.4.1 Extension of Consensus Mechanism" title="Direct link to 3.4.1 Extension of Consensus Mechanism">​</a></h4>
+<p>Note Chain&#x27;s DPoS consensus mechanism is not only used for block production and transaction verification but also supports the following collaborative tasks:</p>
+<ol>
+<li>
+<p><strong>Task Distribution</strong></p>
+<ul>
+<li>Smart contracts decompose tasks based on task logic.</li>
+<li>Distribute subtasks to all nodes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Result Verification</strong></p>
+<ul>
+<li>Nodes confirm task result consistency through consensus.</li>
+<li>Ensure the execution process is transparent and trustworthy.</li>
+</ul>
+</li>
+<li>
+<p><strong>Task Storage</strong></p>
+<ul>
+<li>All execution processes and results are stored on the blockchain.</li>
+<li>Form a traceable public record.</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="342-zero-confirmation-security">3.4.2 Zero-Confirmation Security<a href="#342-zero-confirmation-security" class="hash-link" aria-label="Direct link to 3.4.2 Zero-Confirmation Security" title="Direct link to 3.4.2 Zero-Confirmation Security">​</a></h4>
+<ul>
+<li>
+<p><strong>Memory Pool Optimization</strong></p>
+<ul>
+<li>Optimize memory pool broadcasting and sorting rules.</li>
+<li>Ensure real-time task triggering and transaction processing.</li>
+</ul>
+</li>
+<li>
+<p><strong>First-In-First-Out Rule</strong></p>
+<ul>
+<li>Prevent double-spending attacks.</li>
+<li>Ensure high security of transactions in zero-confirmation state.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="35-overall-advantages-of-technical-architecture">3.5 Overall Advantages of Technical Architecture<a href="#35-overall-advantages-of-technical-architecture" class="hash-link" aria-label="Direct link to 3.5 Overall Advantages of Technical Architecture" title="Direct link to 3.5 Overall Advantages of Technical Architecture">​</a></h3>
+<ol>
+<li>
+<p><strong>Efficiency</strong></p>
+<ul>
+<li>High concurrency processing optimized based on the UTXO model, supporting 3000+ TPS.</li>
+<li>Zero-confirmation security mechanism ensures task real-time and efficiency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Decentralization and Trustworthiness</strong></p>
+<ul>
+<li>Nodes collaborate to run tasks through consensus, ensuring transparent and trustworthy results.</li>
+<li>The Oracle system avoids single-point failures of data sources, enhancing data security.</li>
+</ul>
+</li>
+<li>
+<p><strong>Developer Friendliness</strong></p>
+<ul>
+<li>Modular contracts and workflow templates lower the development threshold.</li>
+<li>Supports complex task logic, meeting diverse scenario needs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecosystem Incentives</strong></p>
+<ul>
+<li>Nodes, developers, and users can benefit from running tasks.</li>
+<li>Form a sustainable economic model.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="4-economic-and-governance-model">4. Economic and Governance Model<a href="#4-economic-and-governance-model" class="hash-link" aria-label="Direct link to 4. Economic and Governance Model" title="Direct link to 4. Economic and Governance Model">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="41-revenue-sources">4.1 Revenue Sources<a href="#41-revenue-sources" class="hash-link" aria-label="Direct link to 4.1 Revenue Sources" title="Direct link to 4.1 Revenue Sources">​</a></h3>
+<p>Nodes earn stablecoin rewards by running Agent workflows and the Oracle system:</p>
+<ul>
+<li>
+<p><strong>Workflow Revenue</strong></p>
+<ul>
+<li>Rewards are distributed based on task complexity and resource consumption.</li>
+<li>Supports dynamic adjustment of revenue proportions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Oracle Revenue</strong></p>
+<ul>
+<li>Earn stablecoin rewards based on data processing volume.</li>
+<li>Ensure the sustainability of data provision.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="42-revenue-distribution">4.2 Revenue Distribution<a href="#42-revenue-distribution" class="hash-link" aria-label="Direct link to 4.2 Revenue Distribution" title="Direct link to 4.2 Revenue Distribution">​</a></h3>
+<p>Revenue distribution adopts a transparent proportional mechanism:</p>
+<ol>
+<li>
+<p><strong>Node Revenue (70%)</strong></p>
+<ul>
+<li>Block-producing node rewards: 40%</li>
+<li>Validator rewards: 30%</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecosystem Fund (30%)</strong></p>
+<ul>
+<li>Ecosystem construction: 15%</li>
+<li>Developer incentives: 10%</li>
+<li>Community governance: 5%</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="43-decentralized-governance">4.3 Decentralized Governance<a href="#43-decentralized-governance" class="hash-link" aria-label="Direct link to 4.3 Decentralized Governance" title="Direct link to 4.3 Decentralized Governance">​</a></h3>
+<p>Ecosystem governance is achieved through a DAO mechanism:</p>
+<ul>
+<li>
+<p><strong>Voting Weight</strong></p>
+<ul>
+<li>Based on NOTE holdings and lock-up time.</li>
+<li>Prevents excessive concentration of power.</li>
+</ul>
+</li>
+<li>
+<p><strong>Governance Scope</strong></p>
+<ul>
+<li>System parameter adjustments.</li>
+<li>Use of ecosystem funds.</li>
+<li>Major upgrade decisions.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="5-design-and-application-of-stablecoin-nust">5. Design and Application of Stablecoin NUST<a href="#5-design-and-application-of-stablecoin-nust" class="hash-link" aria-label="Direct link to 5. Design and Application of Stablecoin NUST" title="Direct link to 5. Design and Application of Stablecoin NUST">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="51-core-design">5.1 Core Design<a href="#51-core-design" class="hash-link" aria-label="Direct link to 5.1 Core Design" title="Direct link to 5.1 Core Design">​</a></h3>
+<ul>
+<li>
+<p><strong>Pegging Mechanism</strong></p>
+<ul>
+<li>Pegged 1:1 with USDT/USDC: 1 NUST = 1 USDT/USDC.</li>
+<li>Ensures payment stability and predictable value.</li>
+</ul>
+</li>
+<li>
+<p><strong>Issuance Mechanism</strong></p>
+<ul>
+<li>Developers can convert USDT/USDC to NUST.</li>
+<li>Used for on-chain fee payments and task rewards.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="52-issuance-and-redemption">5.2 Issuance and Redemption<a href="#52-issuance-and-redemption" class="hash-link" aria-label="Direct link to 5.2 Issuance and Redemption" title="Direct link to 5.2 Issuance and Redemption">​</a></h3>
+<ul>
+<li>
+<p><strong>Smart Issuance</strong></p>
+<ul>
+<li>NUST issuance is linked to actual payment demand.</li>
+<li>Ensures no risk of over-issuance.</li>
+<li>Transparent issuance records.</li>
+</ul>
+</li>
+<li>
+<p><strong>Automatic Redemption</strong></p>
+<ul>
+<li>Supports NUST redemption back to USDT/USDC at any time.</li>
+<li>Multi-signature ensures redemption security.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="53-liquidity-management">5.3 Liquidity Management<a href="#53-liquidity-management" class="hash-link" aria-label="Direct link to 5.3 Liquidity Management" title="Direct link to 5.3 Liquidity Management">​</a></h3>
+<ul>
+<li>
+<p><strong>AMM Liquidity Pool</strong></p>
+<ul>
+<li>Ecosystem developers provide liquidity support.</li>
+<li>Supports instant exchange of NUST with multi-chain stablecoins.</li>
+</ul>
+</li>
+<li>
+<p><strong>Risk Control</strong></p>
+<ul>
+<li>Set exchange limits.</li>
+<li>Monitor liquidity reserves.</li>
+<li>Emergency suspension mechanism.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="6-application-scenarios">6. Application Scenarios<a href="#6-application-scenarios" class="hash-link" aria-label="Direct link to 6. Application Scenarios" title="Direct link to 6. Application Scenarios">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="61-ai-agent-and-humans">6.1 AI Agent and Humans<a href="#61-ai-agent-and-humans" class="hash-link" aria-label="Direct link to 6.1 AI Agent and Humans" title="Direct link to 6.1 AI Agent and Humans">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="intelligent-task-payments">Intelligent Task Payments<a href="#intelligent-task-payments" class="hash-link" aria-label="Direct link to Intelligent Task Payments" title="Direct link to Intelligent Task Payments">​</a></h4>
+<ul>
+<li><strong>Automated Services</strong>
+<ul>
+<li>Data processing</li>
+<li>Document generation</li>
+<li>Content creation</li>
+</ul>
+</li>
+<li><strong>Instant Settlement</strong>
+<ul>
+<li>Pay-per-use</li>
+<li>Automated payment processes</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="asset-management">Asset Management<a href="#asset-management" class="hash-link" aria-label="Direct link to Asset Management" title="Direct link to Asset Management">​</a></h4>
+<ul>
+<li><strong>Investment Automation</strong>
+<ul>
+<li>Smart portfolio management</li>
+<li>Risk control</li>
+</ul>
+</li>
+<li><strong>Revenue Distribution</strong>
+<ul>
+<li>Automatic multi-party revenue distribution</li>
+<li>Transparent revenue records</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="62-ai-agent-and-ai-agent">6.2 AI Agent and AI Agent<a href="#62-ai-agent-and-ai-agent" class="hash-link" aria-label="Direct link to 6.2 AI Agent and AI Agent" title="Direct link to 6.2 AI Agent and AI Agent">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="data-trading">Data Trading<a href="#data-trading" class="hash-link" aria-label="Direct link to Data Trading" title="Direct link to Data Trading">​</a></h4>
+<ul>
+<li><strong>Data Sharing</strong>
+<ul>
+<li>Instant data exchange between Agents</li>
+<li>Pay-as-you-go mechanism</li>
+</ul>
+</li>
+<li><strong>Quality Assurance</strong>
+<ul>
+<li>Data trustworthiness verification</li>
+<li>Intelligent pricing system</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="collaborative-execution">Collaborative Execution<a href="#collaborative-execution" class="hash-link" aria-label="Direct link to Collaborative Execution" title="Direct link to Collaborative Execution">​</a></h4>
+<ul>
+<li><strong>Multi-Agent Collaboration</strong>
+<ul>
+<li>Complex task decomposition</li>
+<li>Collaborative revenue distribution</li>
+</ul>
+</li>
+<li><strong>Efficiency Improvement</strong>
+<ul>
+<li>Automated workflows</li>
+<li>Real-time settlement mechanism</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="63-ai-agent-and-the-physical-world">6.3 AI Agent and the Physical World<a href="#63-ai-agent-and-the-physical-world" class="hash-link" aria-label="Direct link to 6.3 AI Agent and the Physical World" title="Direct link to 6.3 AI Agent and the Physical World">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="supply-chain-management">Supply Chain Management<a href="#supply-chain-management" class="hash-link" aria-label="Direct link to Supply Chain Management" title="Direct link to Supply Chain Management">​</a></h4>
+<ul>
+<li><strong>Intelligent Logistics</strong>
+<ul>
+<li>Automated order processing</li>
+<li>Real-time payment settlement</li>
+</ul>
+</li>
+<li><strong>Inventory Optimization</strong>
+<ul>
+<li>Smart replenishment system</li>
+<li>Dynamic pricing strategy</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_tuUZ" id="energy-and-equipment-leasing">Energy and Equipment Leasing<a href="#energy-and-equipment-leasing" class="hash-link" aria-label="Direct link to Energy and Equipment Leasing" title="Direct link to Energy and Equipment Leasing">​</a></h4>
+<ul>
+<li><strong>Smart Metering</strong>
+<ul>
+<li>Real-time usage monitoring</li>
+<li>Automated billing</li>
+</ul>
+</li>
+<li><strong>Equipment Management</strong>
+<ul>
+<li>Remote control and monitoring</li>
+<li>Pay-per-use</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="7-long-term-vision">7. Long-term Vision<a href="#7-long-term-vision" class="hash-link" aria-label="Direct link to 7. Long-term Vision" title="Direct link to 7. Long-term Vision">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="71-infrastructure-for-the-future-economy">7.1 Infrastructure for the Future Economy<a href="#71-infrastructure-for-the-future-economy" class="hash-link" aria-label="Direct link to 7.1 Infrastructure for the Future Economy" title="Direct link to 7.1 Infrastructure for the Future Economy">​</a></h3>
+<p>Note Chain aims to become:</p>
+<ul>
+<li><strong>The core pillar of the AI automated economy</strong></li>
+<li><strong>An innovative platform for decentralized financial services</strong></li>
+<li><strong>A bridge for cross-chain asset interoperability</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="72-driving-ecosystem-self-evolution">7.2 Driving Ecosystem Self-Evolution<a href="#72-driving-ecosystem-self-evolution" class="hash-link" aria-label="Direct link to 7.2 Driving Ecosystem Self-Evolution" title="Direct link to 7.2 Driving Ecosystem Self-Evolution">​</a></h3>
+<p>Achieving sustainable ecosystem development through:</p>
+<ul>
+<li><strong>Community-driven governance</strong></li>
+<li><strong>Incentives for technological innovation</strong></li>
+<li><strong>Multi-party participation in ecosystem construction</strong></li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="73-connecting-multi-chains-and-the-real-world">7.3 Connecting Multi-Chains and the Real World<a href="#73-connecting-multi-chains-and-the-real-world" class="hash-link" aria-label="Direct link to 7.3 Connecting Multi-Chains and the Real World" title="Direct link to 7.3 Connecting Multi-Chains and the Real World">​</a></h3>
+<ul>
+<li>
+<p><strong>Cross-Chain Interoperability</strong></p>
+<ul>
+<li>Support for multi-chain asset integration</li>
+<li>Unified payment standards</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-World Connection</strong></p>
+<ul>
+<li>IoT device integration</li>
+<li>Integration with the physical economy</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="8-roadmap">8. Roadmap<a href="#8-roadmap" class="hash-link" aria-label="Direct link to 8. Roadmap" title="Direct link to 8. Roadmap">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="phase-1-infrastructure-building">Phase 1: Infrastructure Building<a href="#phase-1-infrastructure-building" class="hash-link" aria-label="Direct link to Phase 1: Infrastructure Building" title="Direct link to Phase 1: Infrastructure Building">​</a></h3>
+<ul>
+<li>Implement high-performance Layer 1 blockchain and DPoS consensus.</li>
+<li>Launch native stablecoin NUST and cross-chain exchange functionality.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="phase-2-ecosystem-expansion">Phase 2: Ecosystem Expansion<a href="#phase-2-ecosystem-expansion" class="hash-link" aria-label="Direct link to Phase 2: Ecosystem Expansion" title="Direct link to Phase 2: Ecosystem Expansion">​</a></h3>
+<ul>
+<li>Integrate Oracle system to support off-chain data access.</li>
+<li>Attract developers to build smart contracts and workflow templates.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_tuUZ" id="phase-3-governance-and-open-collaboration">Phase 3: Governance and Open Collaboration<a href="#phase-3-governance-and-open-collaboration" class="hash-link" aria-label="Direct link to Phase 3: Governance and Open Collaboration" title="Direct link to Phase 3: Governance and Open Collaboration">​</a></h3>
+<ul>
+<li>Initiate DAO governance, empowering community participation in ecosystem decisions.</li>
+<li>Support more stablecoins and cross-chain asset integration.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_tuUZ" id="9-conclusion">9. Conclusion<a href="#9-conclusion" class="hash-link" aria-label="Direct link to 9. Conclusion" title="Direct link to 9. Conclusion">​</a></h2>
+<p>Through innovative technical architecture and economic design, Note Chain provides a <strong>highly efficient</strong>, <strong>trustworthy</strong>, and <strong>sustainable</strong> infrastructure for the AI Agent Economy. Our solution fundamentally addresses the core issues in AI Agent operations:</p>
+<ul>
+<li><strong>Efficient Payments</strong>: Supports high-frequency micropayments and complex payment logic.</li>
+<li><strong>Trusted Data</strong>: Decentralized Oracle ensures data reliability.</li>
+<li><strong>Incentive Mechanism</strong>: A reasonable economic model drives ecosystem development.</li>
+</ul>
+<p>We look forward to collaborating with developers, users, and community partners to build a more intelligent, open, and prosperous blockchain ecosystem.</p>
+<p><strong>Join Note Chain and create the future together!</strong></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/research/action"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Bitcoin/Note Actions (Draft)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_Hx9M thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#1-background-and-mission" class="table-of-contents__link toc-highlight">1. Background and Mission</a><ul><li><a href="#11-background-the-rise-of-the-ai-agent-economy" class="table-of-contents__link toc-highlight">1.1 Background: The Rise of the AI Agent Economy</a></li><li><a href="#12-mission-of-note-chain" class="table-of-contents__link toc-highlight">1.2 Mission of Note Chain</a></li></ul></li><li><a href="#2-note-chains-solution" class="table-of-contents__link toc-highlight">2. Note Chain&#39;s Solution</a><ul><li><a href="#21-core-issues-of-ai-agents" class="table-of-contents__link toc-highlight">2.1 Core Issues of AI Agents</a></li><li><a href="#22-core-solutions-of-note-chain" class="table-of-contents__link toc-highlight">2.2 Core Solutions of Note Chain</a></li><li><a href="#23-advantages-brought-by-note-chain" class="table-of-contents__link toc-highlight">2.3 Advantages Brought by Note Chain</a></li><li><a href="#24-uniqueness-of-note-chain" class="table-of-contents__link toc-highlight">2.4 Uniqueness of Note Chain</a></li></ul></li><li><a href="#3-technology-and-architecture" class="table-of-contents__link toc-highlight">3. Technology and Architecture</a><ul><li><a href="#31-dpos-consensus-and-node-operation-mechanism" class="table-of-contents__link toc-highlight">3.1 DPoS Consensus and Node Operation Mechanism</a></li><li><a href="#32-implementation-of-agent-workflows" class="table-of-contents__link toc-highlight">3.2 Implementation of Agent Workflows</a></li><li><a href="#33-oracle-system" class="table-of-contents__link toc-highlight">3.3 Oracle System</a></li><li><a href="#34-consensus-and-task-collaboration" class="table-of-contents__link toc-highlight">3.4 Consensus and Task Collaboration</a></li><li><a href="#35-overall-advantages-of-technical-architecture" class="table-of-contents__link toc-highlight">3.5 Overall Advantages of Technical Architecture</a></li></ul></li><li><a href="#4-economic-and-governance-model" class="table-of-contents__link toc-highlight">4. Economic and Governance Model</a><ul><li><a href="#41-revenue-sources" class="table-of-contents__link toc-highlight">4.1 Revenue Sources</a></li><li><a href="#42-revenue-distribution" class="table-of-contents__link toc-highlight">4.2 Revenue Distribution</a></li><li><a href="#43-decentralized-governance" class="table-of-contents__link toc-highlight">4.3 Decentralized Governance</a></li></ul></li><li><a href="#5-design-and-application-of-stablecoin-nust" class="table-of-contents__link toc-highlight">5. Design and Application of Stablecoin NUST</a><ul><li><a href="#51-core-design" class="table-of-contents__link toc-highlight">5.1 Core Design</a></li><li><a href="#52-issuance-and-redemption" class="table-of-contents__link toc-highlight">5.2 Issuance and Redemption</a></li><li><a href="#53-liquidity-management" class="table-of-contents__link toc-highlight">5.3 Liquidity Management</a></li></ul></li><li><a href="#6-application-scenarios" class="table-of-contents__link toc-highlight">6. Application Scenarios</a><ul><li><a href="#61-ai-agent-and-humans" class="table-of-contents__link toc-highlight">6.1 AI Agent and Humans</a></li><li><a href="#62-ai-agent-and-ai-agent" class="table-of-contents__link toc-highlight">6.2 AI Agent and AI Agent</a></li><li><a href="#63-ai-agent-and-the-physical-world" class="table-of-contents__link toc-highlight">6.3 AI Agent and the Physical World</a></li></ul></li><li><a href="#7-long-term-vision" class="table-of-contents__link toc-highlight">7. Long-term Vision</a><ul><li><a href="#71-infrastructure-for-the-future-economy" class="table-of-contents__link toc-highlight">7.1 Infrastructure for the Future Economy</a></li><li><a href="#72-driving-ecosystem-self-evolution" class="table-of-contents__link toc-highlight">7.2 Driving Ecosystem Self-Evolution</a></li><li><a href="#73-connecting-multi-chains-and-the-real-world" class="table-of-contents__link toc-highlight">7.3 Connecting Multi-Chains and the Real World</a></li></ul></li><li><a href="#8-roadmap" class="table-of-contents__link toc-highlight">8. Roadmap</a><ul><li><a href="#phase-1-infrastructure-building" class="table-of-contents__link toc-highlight">Phase 1: Infrastructure Building</a></li><li><a href="#phase-2-ecosystem-expansion" class="table-of-contents__link toc-highlight">Phase 2: Ecosystem Expansion</a></li><li><a href="#phase-3-governance-and-open-collaboration" class="table-of-contents__link toc-highlight">Phase 3: Governance and Open Collaboration</a></li></ul></li><li><a href="#9-conclusion" class="table-of-contents__link toc-highlight">9. Conclusion</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/protocol">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://t.me/NoteProtocol_org" target="_blank" rel="noopener noreferrer" class="footer__link-item">Telegram<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/tGBHKDPkF5" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">X / Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/NoteProtocol" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_wAh_"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Note Protocol. All rights reserved.</div></div></div></footer></div>
+</body>
+</html>
