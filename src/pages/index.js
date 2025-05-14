@@ -101,7 +101,7 @@ export default function Home() {
       title={`${siteConfig.tagline}`}
       description="Bitcoin Layer-1 Assets Protocol for Token/NFT/Data">
       <main>
-        {<TopBanner />}
+        {/* {<TopBanner />} */}
         <HeroBanner />
         <HomepageFeatures />
         <Timeline />

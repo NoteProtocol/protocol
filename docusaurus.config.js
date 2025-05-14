@@ -38,6 +38,16 @@ const config = {
     locales: [ 'en', 'zh' ],
   },
 
+  scripts: [
+    {
+      id: 'formagent-script',
+      src: 'https://formagent.ai/embed.js',
+      async: true,
+      defer: true,
+      'data-agent-id': 'kua3u68ihfufujcrbvlyh72z',
+    },
+  ],
+  
   presets: [
     [
       'classic',
