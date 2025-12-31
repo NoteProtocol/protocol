@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunknote_protocol=globalThis.webpackChunknote_protocol||[]).push([[457],{6599(o){o.exports=JSON.parse('{"metadata":{"permalink":"/zh/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":9,"blogDescription":"\u535a\u5ba2","blogTitle":"\u535a\u5ba2"}}')}}]);
